@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Portfolio",
-    "currentPage": "programming_portfolio.html",
+    "currentPage": "Japan_alley_scene.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -1998,7 +1998,7 @@
         }
       ]
     },
-    "page3.html": {
+    "Japan_alley_scene.html": {
       "settings": {
         "title": "Japan alley scene",
         "order": 3,
