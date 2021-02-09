@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Portfolio",
-    "currentPage": "page7.html",
+    "currentPage": "about_me.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -4753,10 +4753,11 @@
         }
       ]
     },
-    "page7.html": {
+    "about_me.html": {
       "settings": {
         "title": "About me",
-        "order": 1
+        "order": 1,
+        "meta_descr": "Joe Siu's about me page"
       },
       "components": [
         {
