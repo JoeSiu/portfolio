@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Portfolio",
-    "currentPage": "programming_works.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -45,9 +45,9 @@
       }
     ],
     "publishChangesOnly": true,
-    "imageResize": false,
+    "imageResize": true,
     "favicon": false,
-    "mbrsiteDomain": "txv1ifa2zk",
+    "mbrsiteDomain": "6sp9o8xshy",
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
     "sitemapSwitcherAuto": false,
