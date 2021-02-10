@@ -1676,6 +1676,342 @@ a {
 .cid-snlIFhaZo3 .mbr-description {
   color: #bbbbbb;
 }
+.cid-soAmHxK0EN {
+  padding-top: 60px;
+  padding-bottom: 0px;
+  background-color: #000000;
+}
+.cid-soAmHxK0EN .progress {
+  width: 100%;
+}
+.cid-soAmHxK0EN progress {
+  height: 8px;
+}
+.cid-soAmHxK0EN h3 {
+  text-align: center;
+  font-weight: 300;
+}
+.cid-soAmHxK0EN .mbr-section-subtitle {
+  color: #ffffff;
+  text-align: left;
+}
+.cid-soAmHxK0EN .progress_value {
+  position: relative;
+}
+.cid-soAmHxK0EN .progress_elements {
+  margin: 0 auto;
+}
+.cid-soAmHxK0EN .title-wrap {
+  display: flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+.cid-soAmHxK0EN .progress1 .progressbar-number:before,
+.cid-soAmHxK0EN .progress2 .progressbar-number:before,
+.cid-soAmHxK0EN .progress3 .progressbar-number:before,
+.cid-soAmHxK0EN .progress4 .progressbar-number:before {
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+.cid-soAmHxK0EN progress[value]::-webkit-progress-bar {
+  background: rgba(206, 206, 206, 0.4);
+}
+.cid-soAmHxK0EN progress::-webkit-progress-value {
+  background: #ffe161;
+}
+.cid-soAmHxK0EN progress[value]::-moz-progress-bar {
+  background: #ffe161;
+}
+.cid-soAmHxK0EN progress::-ms-fill {
+  background: #ffe161;
+}
+.cid-soAmHxK0EN .progress1 .progressbar-number:before {
+  content: '55';
+}
+.cid-soAmHxK0EN .progress2 .progressbar-number:before {
+  content: '80';
+}
+.cid-soAmHxK0EN .progress3 .progressbar-number:before {
+  content: '90';
+}
+.cid-soAmHxK0EN .progress4 .progressbar-number:before {
+  content: '100';
+}
+.cid-soAmHxK0EN .progress-primary {
+  background: rgba(206, 206, 206, 0.4);
+  border: none;
+  outline: none;
+}
+.cid-soAmHxK0EN .progress-primary::-webkit-progress-bar {
+  background: rgba(206, 206, 206, 0.4);
+}
+.cid-soAmHxK0EN .progress_value span {
+  padding-left: 30px;
+}
+.cid-soAmHxK0EN .progressbar-number {
+  word-break: normal;
+}
+.cid-soAmHxK0EN .mbr-section-title {
+  color: #ffe161;
+  text-align: left;
+}
+.cid-soAmHxK0EN .progressbar-title p,
+.cid-soAmHxK0EN .progress_value {
+  color: #ffffff;
+}
+.cid-soAmNR1OaW {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #000000;
+}
+.cid-soAmNR1OaW .progress {
+  width: 100%;
+}
+.cid-soAmNR1OaW progress {
+  height: 8px;
+}
+.cid-soAmNR1OaW h3 {
+  text-align: center;
+  font-weight: 300;
+}
+.cid-soAmNR1OaW .mbr-section-subtitle {
+  color: #ffffff;
+  text-align: left;
+}
+.cid-soAmNR1OaW .progress_value {
+  position: relative;
+}
+.cid-soAmNR1OaW .progress_elements {
+  margin: 0 auto;
+}
+.cid-soAmNR1OaW .title-wrap {
+  display: flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+.cid-soAmNR1OaW .progress1 .progressbar-number:before,
+.cid-soAmNR1OaW .progress2 .progressbar-number:before,
+.cid-soAmNR1OaW .progress3 .progressbar-number:before,
+.cid-soAmNR1OaW .progress4 .progressbar-number:before {
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+.cid-soAmNR1OaW progress[value]::-webkit-progress-bar {
+  background: rgba(206, 206, 206, 0.4);
+}
+.cid-soAmNR1OaW progress::-webkit-progress-value {
+  background: #ffe161;
+}
+.cid-soAmNR1OaW progress[value]::-moz-progress-bar {
+  background: #ffe161;
+}
+.cid-soAmNR1OaW progress::-ms-fill {
+  background: #ffe161;
+}
+.cid-soAmNR1OaW .progress1 .progressbar-number:before {
+  content: '25';
+}
+.cid-soAmNR1OaW .progress2 .progressbar-number:before {
+  content: '80';
+}
+.cid-soAmNR1OaW .progress3 .progressbar-number:before {
+  content: '90';
+}
+.cid-soAmNR1OaW .progress4 .progressbar-number:before {
+  content: '100';
+}
+.cid-soAmNR1OaW .progress-primary {
+  background: rgba(206, 206, 206, 0.4);
+  border: none;
+  outline: none;
+}
+.cid-soAmNR1OaW .progress-primary::-webkit-progress-bar {
+  background: rgba(206, 206, 206, 0.4);
+}
+.cid-soAmNR1OaW .progress_value span {
+  padding-left: 30px;
+}
+.cid-soAmNR1OaW .progressbar-number {
+  word-break: normal;
+}
+.cid-soAmNR1OaW .mbr-section-title {
+  color: #ffe161;
+  text-align: left;
+}
+.cid-soAmNR1OaW .progressbar-title p,
+.cid-soAmNR1OaW .progress_value {
+  color: #ffffff;
+}
+.cid-soAmOyXYWI {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #000000;
+}
+.cid-soAmOyXYWI .progress {
+  width: 100%;
+}
+.cid-soAmOyXYWI progress {
+  height: 8px;
+}
+.cid-soAmOyXYWI h3 {
+  text-align: center;
+  font-weight: 300;
+}
+.cid-soAmOyXYWI .mbr-section-subtitle {
+  color: #ffffff;
+  text-align: left;
+}
+.cid-soAmOyXYWI .progress_value {
+  position: relative;
+}
+.cid-soAmOyXYWI .progress_elements {
+  margin: 0 auto;
+}
+.cid-soAmOyXYWI .title-wrap {
+  display: flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+.cid-soAmOyXYWI .progress1 .progressbar-number:before,
+.cid-soAmOyXYWI .progress2 .progressbar-number:before,
+.cid-soAmOyXYWI .progress3 .progressbar-number:before,
+.cid-soAmOyXYWI .progress4 .progressbar-number:before {
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+.cid-soAmOyXYWI progress[value]::-webkit-progress-bar {
+  background: rgba(206, 206, 206, 0.4);
+}
+.cid-soAmOyXYWI progress::-webkit-progress-value {
+  background: #ffe161;
+}
+.cid-soAmOyXYWI progress[value]::-moz-progress-bar {
+  background: #ffe161;
+}
+.cid-soAmOyXYWI progress::-ms-fill {
+  background: #ffe161;
+}
+.cid-soAmOyXYWI .progress1 .progressbar-number:before {
+  content: '10';
+}
+.cid-soAmOyXYWI .progress2 .progressbar-number:before {
+  content: '80';
+}
+.cid-soAmOyXYWI .progress3 .progressbar-number:before {
+  content: '90';
+}
+.cid-soAmOyXYWI .progress4 .progressbar-number:before {
+  content: '100';
+}
+.cid-soAmOyXYWI .progress-primary {
+  background: rgba(206, 206, 206, 0.4);
+  border: none;
+  outline: none;
+}
+.cid-soAmOyXYWI .progress-primary::-webkit-progress-bar {
+  background: rgba(206, 206, 206, 0.4);
+}
+.cid-soAmOyXYWI .progress_value span {
+  padding-left: 30px;
+}
+.cid-soAmOyXYWI .progressbar-number {
+  word-break: normal;
+}
+.cid-soAmOyXYWI .mbr-section-title {
+  color: #ffe161;
+  text-align: left;
+}
+.cid-soAmOyXYWI .progressbar-title p,
+.cid-soAmOyXYWI .progress_value {
+  color: #ffffff;
+}
+.cid-soAmNiLkjv {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #000000;
+}
+.cid-soAmNiLkjv .progress {
+  width: 100%;
+}
+.cid-soAmNiLkjv progress {
+  height: 8px;
+}
+.cid-soAmNiLkjv h3 {
+  text-align: center;
+  font-weight: 300;
+}
+.cid-soAmNiLkjv .mbr-section-subtitle {
+  color: #ffffff;
+  text-align: left;
+}
+.cid-soAmNiLkjv .progress_value {
+  position: relative;
+}
+.cid-soAmNiLkjv .progress_elements {
+  margin: 0 auto;
+}
+.cid-soAmNiLkjv .title-wrap {
+  display: flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+.cid-soAmNiLkjv .progress1 .progressbar-number:before,
+.cid-soAmNiLkjv .progress2 .progressbar-number:before,
+.cid-soAmNiLkjv .progress3 .progressbar-number:before,
+.cid-soAmNiLkjv .progress4 .progressbar-number:before {
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+.cid-soAmNiLkjv progress[value]::-webkit-progress-bar {
+  background: rgba(206, 206, 206, 0.4);
+}
+.cid-soAmNiLkjv progress::-webkit-progress-value {
+  background: #ffe161;
+}
+.cid-soAmNiLkjv progress[value]::-moz-progress-bar {
+  background: #ffe161;
+}
+.cid-soAmNiLkjv progress::-ms-fill {
+  background: #ffe161;
+}
+.cid-soAmNiLkjv .progress1 .progressbar-number:before {
+  content: '10';
+}
+.cid-soAmNiLkjv .progress2 .progressbar-number:before {
+  content: '80';
+}
+.cid-soAmNiLkjv .progress3 .progressbar-number:before {
+  content: '90';
+}
+.cid-soAmNiLkjv .progress4 .progressbar-number:before {
+  content: '100';
+}
+.cid-soAmNiLkjv .progress-primary {
+  background: rgba(206, 206, 206, 0.4);
+  border: none;
+  outline: none;
+}
+.cid-soAmNiLkjv .progress-primary::-webkit-progress-bar {
+  background: rgba(206, 206, 206, 0.4);
+}
+.cid-soAmNiLkjv .progress_value span {
+  padding-left: 30px;
+}
+.cid-soAmNiLkjv .progressbar-number {
+  word-break: normal;
+}
+.cid-soAmNiLkjv .mbr-section-title {
+  color: #ffe161;
+  text-align: left;
+}
+.cid-soAmNiLkjv .progressbar-title p,
+.cid-soAmNiLkjv .progress_value {
+  color: #ffffff;
+}
 .cid-snhsEHhM86 {
   padding-top: 0rem;
   padding-bottom: 0rem;
@@ -3087,6 +3423,174 @@ a {
   color: #ffe161;
 }
 .cid-snlW7I3FVV .mbr-text {
+  color: #ffffff;
+}
+.cid-soAmq08fc4 {
+  padding-top: 60px;
+  padding-bottom: 0px;
+  background-color: #000000;
+}
+.cid-soAmq08fc4 .progress {
+  width: 100%;
+}
+.cid-soAmq08fc4 progress {
+  height: 8px;
+}
+.cid-soAmq08fc4 h3 {
+  text-align: center;
+  font-weight: 300;
+}
+.cid-soAmq08fc4 .mbr-section-subtitle {
+  color: #ffffff;
+  text-align: left;
+}
+.cid-soAmq08fc4 .progress_value {
+  position: relative;
+}
+.cid-soAmq08fc4 .progress_elements {
+  margin: 0 auto;
+}
+.cid-soAmq08fc4 .title-wrap {
+  display: flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+.cid-soAmq08fc4 .progress1 .progressbar-number:before,
+.cid-soAmq08fc4 .progress2 .progressbar-number:before,
+.cid-soAmq08fc4 .progress3 .progressbar-number:before,
+.cid-soAmq08fc4 .progress4 .progressbar-number:before {
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+.cid-soAmq08fc4 progress[value]::-webkit-progress-bar {
+  background: rgba(206, 206, 206, 0.4);
+}
+.cid-soAmq08fc4 progress::-webkit-progress-value {
+  background: #ffe161;
+}
+.cid-soAmq08fc4 progress[value]::-moz-progress-bar {
+  background: #ffe161;
+}
+.cid-soAmq08fc4 progress::-ms-fill {
+  background: #ffe161;
+}
+.cid-soAmq08fc4 .progress1 .progressbar-number:before {
+  content: '90';
+}
+.cid-soAmq08fc4 .progress2 .progressbar-number:before {
+  content: '80';
+}
+.cid-soAmq08fc4 .progress3 .progressbar-number:before {
+  content: '90';
+}
+.cid-soAmq08fc4 .progress4 .progressbar-number:before {
+  content: '100';
+}
+.cid-soAmq08fc4 .progress-primary {
+  background: rgba(206, 206, 206, 0.4);
+  border: none;
+  outline: none;
+}
+.cid-soAmq08fc4 .progress-primary::-webkit-progress-bar {
+  background: rgba(206, 206, 206, 0.4);
+}
+.cid-soAmq08fc4 .progress_value span {
+  padding-left: 30px;
+}
+.cid-soAmq08fc4 .progressbar-number {
+  word-break: normal;
+}
+.cid-soAmq08fc4 .mbr-section-title {
+  color: #ffe161;
+  text-align: left;
+}
+.cid-soAmq08fc4 .progressbar-title p,
+.cid-soAmq08fc4 .progress_value {
+  color: #ffffff;
+}
+.cid-soAmquxewz {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #000000;
+}
+.cid-soAmquxewz .progress {
+  width: 100%;
+}
+.cid-soAmquxewz progress {
+  height: 8px;
+}
+.cid-soAmquxewz h3 {
+  text-align: center;
+  font-weight: 300;
+}
+.cid-soAmquxewz .mbr-section-subtitle {
+  color: #ffffff;
+  text-align: left;
+}
+.cid-soAmquxewz .progress_value {
+  position: relative;
+}
+.cid-soAmquxewz .progress_elements {
+  margin: 0 auto;
+}
+.cid-soAmquxewz .title-wrap {
+  display: flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+.cid-soAmquxewz .progress1 .progressbar-number:before,
+.cid-soAmquxewz .progress2 .progressbar-number:before,
+.cid-soAmquxewz .progress3 .progressbar-number:before,
+.cid-soAmquxewz .progress4 .progressbar-number:before {
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+.cid-soAmquxewz progress[value]::-webkit-progress-bar {
+  background: rgba(206, 206, 206, 0.4);
+}
+.cid-soAmquxewz progress::-webkit-progress-value {
+  background: #ffe161;
+}
+.cid-soAmquxewz progress[value]::-moz-progress-bar {
+  background: #ffe161;
+}
+.cid-soAmquxewz progress::-ms-fill {
+  background: #ffe161;
+}
+.cid-soAmquxewz .progress1 .progressbar-number:before {
+  content: '10';
+}
+.cid-soAmquxewz .progress2 .progressbar-number:before {
+  content: '80';
+}
+.cid-soAmquxewz .progress3 .progressbar-number:before {
+  content: '90';
+}
+.cid-soAmquxewz .progress4 .progressbar-number:before {
+  content: '100';
+}
+.cid-soAmquxewz .progress-primary {
+  background: rgba(206, 206, 206, 0.4);
+  border: none;
+  outline: none;
+}
+.cid-soAmquxewz .progress-primary::-webkit-progress-bar {
+  background: rgba(206, 206, 206, 0.4);
+}
+.cid-soAmquxewz .progress_value span {
+  padding-left: 30px;
+}
+.cid-soAmquxewz .progressbar-number {
+  word-break: normal;
+}
+.cid-soAmquxewz .mbr-section-title {
+  color: #ffe161;
+  text-align: left;
+}
+.cid-soAmquxewz .progressbar-title p,
+.cid-soAmquxewz .progress_value {
   color: #ffffff;
 }
 .cid-sowMa0tJvj {
