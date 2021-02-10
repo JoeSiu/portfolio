@@ -47,7 +47,7 @@
     "publishChangesOnly": true,
     "imageResize": false,
     "favicon": false,
-    "mbrsiteDomain": "omrssz7exg",
+    "mbrsiteDomain": "txv1ifa2zk",
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
     "sitemapSwitcherAuto": false,
@@ -78,7 +78,7 @@
     "witsec-mailform-recaptcha-hidebadge": false,
     "witsec-mailform": false,
     "witsec-language": false,
-    "google-analytics": "",
+    "google-analytics": "<!-- Global site tag (gtag.js) - Google Analytics -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-SWMDXRWCWW\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'G-SWMDXRWCWW');\n</script>",
     "global_after_body": "<style>\nbody {\n  overflow: overlay;\n}\n::-webkit-scrollbar {\n width: 10px;\n height: 10px;\n}\n::-webkit-scrollbar-thumb {\n background: rgba(128, 128, 128, 0.75);\n border-radius: 10px;\n}\n::-webkit-scrollbar-thumb:hover{\n background: rgba(32, 32, 32, 0.75);;\n}\n::-webkit-scrollbar-track{\n background: rgba(255, 255, 255, 0.25);;\n border-radius: 10px;\n}\n</style>"
   },
   "pages": {
