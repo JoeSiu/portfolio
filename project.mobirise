@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Portfolio",
-    "currentPage": "about_me.html",
+    "currentPage": "Somewhere_in_Tokyo.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -47,14 +47,14 @@
     "publishChangesOnly": true,
     "imageResize": true,
     "favicon": false,
-    "mbrsiteDomain": "1ekjv7lreu",
+    "mbrsiteDomain": "shqckjat5c",
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
     "sitemapSwitcherAuto": false,
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 216,
+    "uniqCompNum": 225,
     "versionPublish": "5.2.6",
     "screenshot": "screenshot.png",
     "witsec-white-label": true,
@@ -933,7 +933,7 @@
     "Japan_alley_scene.html": {
       "settings": {
         "title": "Japan alley scene",
-        "order": 6,
+        "order": 5,
         "meta_descr": "Joe Siu's 3d artworks"
       },
       "components": [
@@ -2301,7 +2301,7 @@
     "programming_works.html": {
       "settings": {
         "title": "Programming works",
-        "order": 4,
+        "order": 3,
         "meta_descr": "Joe Siu's programming-related works"
       },
       "components": [
@@ -2860,7 +2860,7 @@
     "3d_art_works.html": {
       "settings": {
         "title": "3d art works",
-        "order": 5,
+        "order": 4,
         "meta_descr": "Joe Siu's 3d artworks"
       },
       "components": [
@@ -3421,7 +3421,7 @@
     "The_foxes_want_Christmas_too.html": {
       "settings": {
         "title": "The foxes want Christmas too",
-        "order": 7,
+        "order": 6,
         "meta_descr": "Joe Siu's 3d artworks"
       },
       "components": [
@@ -4245,7 +4245,7 @@
     "Somewhere_in_Tokyo.html": {
       "settings": {
         "title": "Somewhere in Tokyo",
-        "order": 8,
+        "order": 7,
         "meta_descr": "Joe Siu's 3d artworks"
       },
       "components": [
@@ -5209,7 +5209,7 @@
     "404.html": {
       "settings": {
         "title": "404 error",
-        "order": 3,
+        "order": 2,
         "meta_descr": "404 page not found"
       },
       "components": [
@@ -5679,7 +5679,7 @@
     "about_me.html": {
       "settings": {
         "title": "About me / contact",
-        "order": 2,
+        "order": 1,
         "meta_descr": "Joe Siu's about me / contact page"
       },
       "components": [
