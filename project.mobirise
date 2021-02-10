@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Portfolio",
-    "currentPage": "index.html",
+    "currentPage": "Somewhere_in_Tokyo.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -47,7 +47,7 @@
     "publishChangesOnly": true,
     "imageResize": false,
     "favicon": false,
-    "mbrsiteDomain": "ghtkfr5xpw",
+    "mbrsiteDomain": "omrssz7exg",
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
     "sitemapSwitcherAuto": false,
@@ -55,7 +55,7 @@
     "cookiesAlert": false,
     "gdpr": false,
     "uniqCompNum": 267,
-    "versionPublish": "5.2.6",
+    "versionPublish": "5.2.8",
     "screenshot": "screenshot.png",
     "witsec-white-label": true,
     "witsec-mailform-to": "2000.joesiu@gmail.com",
@@ -78,7 +78,8 @@
     "witsec-mailform-recaptcha-hidebadge": false,
     "witsec-mailform": false,
     "witsec-language": false,
-    "google-analytics": "<style>\nbody {\n  overflow: overlay;\n}\n::-webkit-scrollbar {\n width: 10px;\n height: 10px;\n}\n::-webkit-scrollbar-thumb {\n background: rgba(128, 128, 128, 0.75);\n border-radius: 10px;\n}\n::-webkit-scrollbar-thumb:hover{\n background: rgba(32, 32, 32, 0.75);;\n}\n::-webkit-scrollbar-track{\n background: rgba(255, 255, 255, 0.25);;\n border-radius: 10px;\n}\n</style>"
+    "google-analytics": "",
+    "global_after_body": "<style>\nbody {\n  overflow: overlay;\n}\n::-webkit-scrollbar {\n width: 10px;\n height: 10px;\n}\n::-webkit-scrollbar-thumb {\n background: rgba(128, 128, 128, 0.75);\n border-radius: 10px;\n}\n::-webkit-scrollbar-thumb:hover{\n background: rgba(32, 32, 32, 0.75);;\n}\n::-webkit-scrollbar-track{\n background: rgba(255, 255, 255, 0.25);;\n border-radius: 10px;\n}\n</style>"
   },
   "pages": {
     "index.html": {
