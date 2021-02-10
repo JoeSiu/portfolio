@@ -2009,8 +2009,8 @@
 @-webkit-keyframes fadeInUp {
   from {
     opacity: 0;
-    -webkit-transform: translateY(150px);
-    transform: translateY(150px);
+    -webkit-transform: translateY(25px);
+    transform: translateY(25px);
   }
 
   to {
@@ -2022,8 +2022,8 @@
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    -webkit-transform: translateY(150px);
-    transform: translateY(150px);
+    -webkit-transform: translateY(25px);
+    transform: translateY(25px);
   }
 
   to {
