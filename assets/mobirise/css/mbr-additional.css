@@ -4673,6 +4673,90 @@ a {
 .cid-sowOBmMB9M .progress_value {
   color: #ffffff;
 }
+.cid-soA0VLIgvg {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #000000;
+}
+.cid-soA0VLIgvg .progress {
+  width: 100%;
+}
+.cid-soA0VLIgvg progress {
+  height: 8px;
+}
+.cid-soA0VLIgvg h3 {
+  text-align: center;
+  font-weight: 300;
+}
+.cid-soA0VLIgvg .mbr-section-subtitle {
+  color: #ffffff;
+  text-align: left;
+}
+.cid-soA0VLIgvg .progress_value {
+  position: relative;
+}
+.cid-soA0VLIgvg .progress_elements {
+  margin: 0 auto;
+}
+.cid-soA0VLIgvg .title-wrap {
+  display: flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+.cid-soA0VLIgvg .progress1 .progressbar-number:before,
+.cid-soA0VLIgvg .progress2 .progressbar-number:before,
+.cid-soA0VLIgvg .progress3 .progressbar-number:before,
+.cid-soA0VLIgvg .progress4 .progressbar-number:before {
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+.cid-soA0VLIgvg progress[value]::-webkit-progress-bar {
+  background: rgba(206, 206, 206, 0.4);
+}
+.cid-soA0VLIgvg progress::-webkit-progress-value {
+  background: #ffe161;
+}
+.cid-soA0VLIgvg progress[value]::-moz-progress-bar {
+  background: #ffe161;
+}
+.cid-soA0VLIgvg progress::-ms-fill {
+  background: #ffe161;
+}
+.cid-soA0VLIgvg .progress1 .progressbar-number:before {
+  content: '5';
+}
+.cid-soA0VLIgvg .progress2 .progressbar-number:before {
+  content: '80';
+}
+.cid-soA0VLIgvg .progress3 .progressbar-number:before {
+  content: '90';
+}
+.cid-soA0VLIgvg .progress4 .progressbar-number:before {
+  content: '100';
+}
+.cid-soA0VLIgvg .progress-primary {
+  background: rgba(206, 206, 206, 0.4);
+  border: none;
+  outline: none;
+}
+.cid-soA0VLIgvg .progress-primary::-webkit-progress-bar {
+  background: rgba(206, 206, 206, 0.4);
+}
+.cid-soA0VLIgvg .progress_value span {
+  padding-left: 30px;
+}
+.cid-soA0VLIgvg .progressbar-number {
+  word-break: normal;
+}
+.cid-soA0VLIgvg .mbr-section-title {
+  color: #ffe161;
+  text-align: left;
+}
+.cid-soA0VLIgvg .progressbar-title p,
+.cid-soA0VLIgvg .progress_value {
+  color: #ffffff;
+}
 .cid-sowBFdtYpr {
   padding-top: 60px;
   padding-bottom: 0px;
