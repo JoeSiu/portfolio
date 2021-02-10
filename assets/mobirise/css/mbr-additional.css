@@ -1657,6 +1657,24 @@ a {
 .cid-snhsrFqkbe .mbr-text {
   color: #ffffff;
 }
+.cid-soBcDKzolF {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #000000;
+}
+.cid-soBcDKzolF .mbr-section-subtitle {
+  color: #ffe161;
+  text-align: left;
+}
+.cid-soBcDKzolF .mbr-text {
+  color: #ffffff;
+}
+.cid-soBcDKzolF hr.rounded {
+  margin-left: 0px;
+  width: 35%;
+  border-top: 1.5px solid#ffffff;
+  border-radius: 1.5px;
+}
 .cid-snlIFhaZo3 {
   padding-top: 0rem;
   padding-bottom: 3rem;
@@ -2926,6 +2944,24 @@ a {
   padding-bottom: 30px;
   background-color: #000000;
 }
+.cid-soBcy2eeHj {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #000000;
+}
+.cid-soBcy2eeHj .mbr-section-subtitle {
+  color: #ffe161;
+  text-align: left;
+}
+.cid-soBcy2eeHj .mbr-text {
+  color: #ffffff;
+}
+.cid-soBcy2eeHj hr.rounded {
+  margin-left: 0px;
+  width: 35%;
+  border-top: 1.5px solid#ffffff;
+  border-radius: 1.5px;
+}
 .cid-snlW7HgBwP {
   z-index: 1000;
   width: 100%;
@@ -3414,16 +3450,23 @@ a {
     display: none !important;
   }
 }
-.cid-snlW7I3FVV {
+.cid-soBcdCQh7e {
   padding-top: 5rem;
   padding-bottom: 5rem;
   background-color: #000000;
 }
-.cid-snlW7I3FVV .mbr-section-subtitle {
+.cid-soBcdCQh7e .mbr-section-subtitle {
   color: #ffe161;
+  text-align: left;
 }
-.cid-snlW7I3FVV .mbr-text {
+.cid-soBcdCQh7e .mbr-text {
   color: #ffffff;
+}
+.cid-soBcdCQh7e hr.rounded {
+  margin-left: 0px;
+  width: 35%;
+  border-top: 1.5px solid#ffffff;
+  border-radius: 1.5px;
 }
 .cid-soAmq08fc4 {
   padding-top: 60px;
@@ -4086,17 +4129,23 @@ a {
     display: none !important;
   }
 }
-.cid-sov6y85Paz {
+.cid-soBc6Mvoba {
   padding-top: 5rem;
   padding-bottom: 5rem;
   background-color: #000000;
 }
-.cid-sov6y85Paz .mbr-section-subtitle {
+.cid-soBc6Mvoba .mbr-section-subtitle {
   color: #ffe161;
   text-align: left;
 }
-.cid-sov6y85Paz .mbr-text {
+.cid-soBc6Mvoba .mbr-text {
   color: #ffffff;
+}
+.cid-soBc6Mvoba hr.rounded {
+  margin-left: 0px;
+  width: 35%;
+  border-top: 1.5px solid#ffffff;
+  border-radius: 1.5px;
 }
 .cid-sov91ORe6C {
   padding-top: 0rem;
@@ -6724,6 +6773,12 @@ a {
 }
 .cid-soAEUMJW5B .mbr-text {
   color: #ffffff;
+}
+.cid-soAEUMJW5B hr.rounded {
+  margin-left: 0px;
+  width: 35%;
+  border-top: 1.5px solid#ffffff;
+  border-radius: 1.5px;
 }
 .cid-soAEUN3lS5 {
   padding-top: 60px;
