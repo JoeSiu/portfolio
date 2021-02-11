@@ -22,7 +22,7 @@
 
   //show skip loading link if loading takes too long 
   $(function() {
-    $("#skip-loading").delay(5000).fadeIn(500);
+    $("#skip-loading").delay(3500).fadeIn(500);
   });
-  
+
 })(window.jQuery);
