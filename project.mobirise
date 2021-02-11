@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Portfolio",
-    "currentPage": "index.html",
+    "currentPage": "Stationery_War.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -54,7 +54,7 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 283,
+    "uniqCompNum": 301,
     "versionPublish": "5.2.8",
     "screenshot": "screenshot.png",
     "witsec-white-label": true,
@@ -931,6 +931,11 @@
               "-webkit-animation": "loading-center-absolute 1.5s infinite",
               "animation": "loading-center-absolute 1.5s infinite"
             },
+            "#skip-loading": {
+              "text-align": "center",
+              "position": "relative",
+              "top": "85%"
+            },
             ".object": {
               "width": "25px",
               "height": "25px",
@@ -1035,12 +1040,17 @@
                 "transform": "translate(0, 0) rotate(-180deg)",
                 "-webkit-transform": "translate(0, 0) rotate(-180deg)"
               }
+            },
+            "P": {
+              "color": "#ff8a8a"
             }
           },
-          "_customHTML": "<section class=\"mbr-section\" group=\"Dentaura Preloader\" plugins=\"Dentaurapreloader\" once=\"Dentaura Preloader\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"color\" title=\"Background Color\" name=\"preBgcolor\" value=\"#000000\">\n        <input type=\"color\" title=\"Preloader Color\" name=\"preLoadcolor\" value=\"#f7ed4a\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <!-- Dentaura Preloader -->\n        <div id=\"loading-preloader\">\n            <div id=\"loading-center\">\n                <div id=\"loading-center-absolute\">\n                    <div class=\"object\" id=\"object_one\"></div>\n                    <div class=\"object\" id=\"object_two\"></div>\n                    <div class=\"object\" id=\"object_three\"></div>\n                    <div class=\"object\" id=\"object_four\"></div>\n                </div>\n            </div>\n        </div>\n    <!--End of Dentaura Preloader -->\n    \n</section>",
+          "_customHTML": "<section class=\"mbr-section\" group=\"Dentaura Preloader\" plugins=\"Dentaurapreloader\" once=\"Dentaura Preloader\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"color\" title=\"Background Color\" name=\"preBgcolor\" value=\"#000000\">\n        <input type=\"color\" title=\"Preloader Color\" name=\"preLoadcolor\" value=\"#f7ed4a\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <!-- Dentaura Preloader -->\n        <div id=\"loading-preloader\">\n            <div id=\"loading-center\">\n                <div id=\"loading-center-absolute\">\n                    <div class=\"object\" id=\"object_one\"></div>\n                    <div class=\"object\" id=\"object_two\"></div>\n                    <div class=\"object\" id=\"object_three\"></div>\n                    <div class=\"object\" id=\"object_four\"></div>\n                </div>\n                <div id=\"skip-loading\" style=\"display:none\">\n                  <p><a href=\"#\" id=\"skip-loading-link\" class=\"text-warning\">Skip loading?</a></p>\n                </div>\n            </div>\n        </div>\n\n\n    <!--End of Dentaura Preloader -->\n    \n</section>",
           "_anchor": "preloader1-7l",
           "_isUserblock": true,
           "_cid": "soDaqBLrc5",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
           "_protectedParams": [],
           "_global": false,
           "_once": "Dentaura Preloader",
@@ -2465,7 +2475,7 @@
           },
           "_name": "footer7",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section class=\"footer7\" group=\"Footers\" global=\"\" once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked=\"\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected=\"\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"><b><a href=\"#top\" class=\"text-white\">Back to top</a></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"footer7\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"><b><a href=\"#top\" class=\"text-white\">Back to top</a></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
           "_anchor": "footer7-4y",
           "_isUserblock": true,
           "_cid": "sowMa0tJvj",
@@ -2497,6 +2507,11 @@
               "transform": "rotate(45deg)",
               "-webkit-animation": "loading-center-absolute 1.5s infinite",
               "animation": "loading-center-absolute 1.5s infinite"
+            },
+            "#skip-loading": {
+              "text-align": "center",
+              "position": "relative",
+              "top": "85%"
             },
             ".object": {
               "width": "25px",
@@ -2602,12 +2617,17 @@
                 "transform": "translate(0, 0) rotate(-180deg)",
                 "-webkit-transform": "translate(0, 0) rotate(-180deg)"
               }
+            },
+            "P": {
+              "color": "#ff8a8a"
             }
           },
-          "_customHTML": "<section class=\"mbr-section\" group=\"Dentaura Preloader\" plugins=\"Dentaurapreloader\" once=\"Dentaura Preloader\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"color\" title=\"Background Color\" name=\"preBgcolor\" value=\"#000000\">\n        <input type=\"color\" title=\"Preloader Color\" name=\"preLoadcolor\" value=\"#f7ed4a\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <!-- Dentaura Preloader -->\n        <div id=\"loading-preloader\">\n            <div id=\"loading-center\">\n                <div id=\"loading-center-absolute\">\n                    <div class=\"object\" id=\"object_one\"></div>\n                    <div class=\"object\" id=\"object_two\"></div>\n                    <div class=\"object\" id=\"object_three\"></div>\n                    <div class=\"object\" id=\"object_four\"></div>\n                </div>\n            </div>\n        </div>\n    <!--End of Dentaura Preloader -->\n    \n</section>",
-          "_anchor": "preloader1-7q",
+          "_customHTML": "<section class=\"mbr-section\" group=\"Dentaura Preloader\" plugins=\"Dentaurapreloader\" once=\"Dentaura Preloader\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"color\" title=\"Background Color\" name=\"preBgcolor\" value=\"#000000\">\n        <input type=\"color\" title=\"Preloader Color\" name=\"preLoadcolor\" value=\"#f7ed4a\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <!-- Dentaura Preloader -->\n        <div id=\"loading-preloader\">\n            <div id=\"loading-center\">\n                <div id=\"loading-center-absolute\">\n                    <div class=\"object\" id=\"object_one\"></div>\n                    <div class=\"object\" id=\"object_two\"></div>\n                    <div class=\"object\" id=\"object_three\"></div>\n                    <div class=\"object\" id=\"object_four\"></div>\n                </div>\n                <div id=\"skip-loading\" style=\"display:none\">\n                  <p><a href=\"#\" id=\"skip-loading-link\" class=\"text-warning\">Skip loading?</a></p>\n                </div>\n            </div>\n        </div>\n\n\n    <!--End of Dentaura Preloader -->\n    \n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_anchor": "preloader1-88",
           "_isUserblock": true,
-          "_cid": "soDaBnIFYj",
+          "_cid": "soGxfgG0wE",
           "_protectedParams": [],
           "_global": false,
           "_once": "Dentaura Preloader",
@@ -3150,6 +3170,29 @@
           "_params": {}
         },
         {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            }
+          },
+          "_name": "footer7",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section class=\"footer7\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"><b><a href=\"#top\" class=\"text-white\">Back to top</a></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "footer7-4y",
+          "_isUserblock": true,
+          "_cid": "sowMa0tJvj",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {}
+        },
+        {
           "_name": "preloader1",
           "_sourceTheme": "dentauram4",
           "_styles": {
@@ -3172,6 +3215,11 @@
               "transform": "rotate(45deg)",
               "-webkit-animation": "loading-center-absolute 1.5s infinite",
               "animation": "loading-center-absolute 1.5s infinite"
+            },
+            "#skip-loading": {
+              "text-align": "center",
+              "position": "relative",
+              "top": "85%"
             },
             ".object": {
               "width": "25px",
@@ -3277,38 +3325,20 @@
                 "transform": "translate(0, 0) rotate(-180deg)",
                 "-webkit-transform": "translate(0, 0) rotate(-180deg)"
               }
+            },
+            "P": {
+              "color": "#ff8a8a"
             }
           },
-          "_customHTML": "<section class=\"mbr-section\" group=\"Dentaura Preloader\" plugins=\"Dentaurapreloader\" once=\"Dentaura Preloader\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"color\" title=\"Background Color\" name=\"preBgcolor\" value=\"#000000\">\n        <input type=\"color\" title=\"Preloader Color\" name=\"preLoadcolor\" value=\"#f7ed4a\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <!-- Dentaura Preloader -->\n        <div id=\"loading-preloader\">\n            <div id=\"loading-center\">\n                <div id=\"loading-center-absolute\">\n                    <div class=\"object\" id=\"object_one\"></div>\n                    <div class=\"object\" id=\"object_two\"></div>\n                    <div class=\"object\" id=\"object_three\"></div>\n                    <div class=\"object\" id=\"object_four\"></div>\n                </div>\n            </div>\n        </div>\n    <!--End of Dentaura Preloader -->\n    \n</section>",
-          "_anchor": "preloader1-7n",
+          "_customHTML": "<section class=\"mbr-section\" group=\"Dentaura Preloader\" plugins=\"Dentaurapreloader\" once=\"Dentaura Preloader\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"color\" title=\"Background Color\" name=\"preBgcolor\" value=\"#000000\">\n        <input type=\"color\" title=\"Preloader Color\" name=\"preLoadcolor\" value=\"#f7ed4a\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <!-- Dentaura Preloader -->\n        <div id=\"loading-preloader\">\n            <div id=\"loading-center\">\n                <div id=\"loading-center-absolute\">\n                    <div class=\"object\" id=\"object_one\"></div>\n                    <div class=\"object\" id=\"object_two\"></div>\n                    <div class=\"object\" id=\"object_three\"></div>\n                    <div class=\"object\" id=\"object_four\"></div>\n                </div>\n                <div id=\"skip-loading\" style=\"display:none\">\n                  <p><a href=\"#\" id=\"skip-loading-link\" class=\"text-warning\">Skip loading?</a></p>\n                </div>\n            </div>\n        </div>\n\n\n    <!--End of Dentaura Preloader -->\n    \n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_anchor": "preloader1-85",
           "_isUserblock": true,
-          "_cid": "soDavDkvcT",
+          "_cid": "soGx6bW1HU",
           "_protectedParams": [],
           "_global": false,
           "_once": "Dentaura Preloader",
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            }
-          },
-          "_name": "footer7",
-          "_sourceTheme": "mobirise5",
-          "_customHTML": "<section class=\"footer7\" group=\"Footers\" global=\"\" once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked=\"\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected=\"\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"><b><a href=\"#top\" class=\"text-white\">Back to top</a></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_anchor": "footer7-4y",
-          "_isUserblock": true,
-          "_cid": "sowMa0tJvj",
-          "_protectedParams": [],
-          "_global": true,
-          "_once": "footers",
           "_params": {}
         }
       ]
@@ -3873,6 +3903,11 @@
               "-webkit-animation": "loading-center-absolute 1.5s infinite",
               "animation": "loading-center-absolute 1.5s infinite"
             },
+            "#skip-loading": {
+              "text-align": "center",
+              "position": "relative",
+              "top": "85%"
+            },
             ".object": {
               "width": "25px",
               "height": "25px",
@@ -3977,12 +4012,17 @@
                 "transform": "translate(0, 0) rotate(-180deg)",
                 "-webkit-transform": "translate(0, 0) rotate(-180deg)"
               }
+            },
+            "P": {
+              "color": "#ff8a8a"
             }
           },
-          "_customHTML": "<section class=\"mbr-section\" group=\"Dentaura Preloader\" plugins=\"Dentaurapreloader\" once=\"Dentaura Preloader\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"color\" title=\"Background Color\" name=\"preBgcolor\" value=\"#000000\">\n        <input type=\"color\" title=\"Preloader Color\" name=\"preLoadcolor\" value=\"#f7ed4a\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <!-- Dentaura Preloader -->\n        <div id=\"loading-preloader\">\n            <div id=\"loading-center\">\n                <div id=\"loading-center-absolute\">\n                    <div class=\"object\" id=\"object_one\"></div>\n                    <div class=\"object\" id=\"object_two\"></div>\n                    <div class=\"object\" id=\"object_three\"></div>\n                    <div class=\"object\" id=\"object_four\"></div>\n                </div>\n            </div>\n        </div>\n    <!--End of Dentaura Preloader -->\n    \n</section>",
-          "_anchor": "preloader1-7o",
+          "_customHTML": "<section class=\"mbr-section\" group=\"Dentaura Preloader\" plugins=\"Dentaurapreloader\" once=\"Dentaura Preloader\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"color\" title=\"Background Color\" name=\"preBgcolor\" value=\"#000000\">\n        <input type=\"color\" title=\"Preloader Color\" name=\"preLoadcolor\" value=\"#f7ed4a\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <!-- Dentaura Preloader -->\n        <div id=\"loading-preloader\">\n            <div id=\"loading-center\">\n                <div id=\"loading-center-absolute\">\n                    <div class=\"object\" id=\"object_one\"></div>\n                    <div class=\"object\" id=\"object_two\"></div>\n                    <div class=\"object\" id=\"object_three\"></div>\n                    <div class=\"object\" id=\"object_four\"></div>\n                </div>\n                <div id=\"skip-loading\" style=\"display:none\">\n                  <p><a href=\"#\" id=\"skip-loading-link\" class=\"text-warning\">Skip loading?</a></p>\n                </div>\n            </div>\n        </div>\n\n\n    <!--End of Dentaura Preloader -->\n    \n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_anchor": "preloader1-86",
           "_isUserblock": true,
-          "_cid": "soDawQB9Vn",
+          "_cid": "soGx90N50G",
           "_protectedParams": [],
           "_global": false,
           "_once": "Dentaura Preloader",
@@ -4002,7 +4042,7 @@
           },
           "_name": "footer7",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section class=\"footer7\" group=\"Footers\" global=\"\" once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked=\"\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected=\"\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"><b><a href=\"#top\" class=\"text-white\">Back to top</a></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"footer7\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"><b><a href=\"#top\" class=\"text-white\">Back to top</a></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
           "_anchor": "footer7-4y",
           "_isUserblock": true,
           "_cid": "sowMa0tJvj",
@@ -4724,145 +4764,6 @@
           "_params": {}
         },
         {
-          "_name": "preloader1",
-          "_sourceTheme": "dentauram4",
-          "_styles": {
-            "#loading-center": {
-              "width": "100%",
-              "height": "100vh",
-              "position": "relative",
-              "background-color": "@preBgcolor"
-            },
-            "#loading-center-absolute": {
-              "position": "absolute",
-              "left": "50%",
-              "top": "50%",
-              "height": "50px",
-              "width": "50px",
-              "margin-top": "-25px",
-              "margin-left": "-25px",
-              "-ms-transform": "rotate(45deg)",
-              "-webkit-transform": "rotate(45deg)",
-              "transform": "rotate(45deg)",
-              "-webkit-animation": "loading-center-absolute 1.5s infinite",
-              "animation": "loading-center-absolute 1.5s infinite"
-            },
-            ".object": {
-              "width": "25px",
-              "height": "25px",
-              "background-color": "@preLoadcolor",
-              "float": "left"
-            },
-            "#object_one": {
-              "-webkit-animation": "object_one 1.5s infinite",
-              "animation": "object_one 1.5s infinite"
-            },
-            "#object_two": {
-              "-webkit-animation": "object_two 1.5s infinite",
-              "animation": "object_two 1.5s infinite"
-            },
-            "#object_three": {
-              "-webkit-animation": "object_three 1.5s infinite",
-              "animation": "object_three 1.5s infinite"
-            },
-            "#object_four": {
-              "-webkit-animation": "object_four 1.5s infinite",
-              "animation": "object_four 1.5s infinite"
-            },
-            "@-webkit-keyframes loading-center-absolute": {
-              "100%": {
-                "-webkit-transform": "rotate(-45deg)"
-              }
-            },
-            "@keyframes loading-center-absolute": {
-              "100%": {
-                "transform": "rotate(-45deg)",
-                "-webkit-transform": "rotate(-45deg)"
-              }
-            },
-            "@-webkit-keyframes object_one": {
-              "25%": {
-                "-webkit-transform": "translate(0, -50px) rotate(-180deg)"
-              },
-              "100%": {
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@keyframes object_one": {
-              "25%": {
-                "transform": "translate(0, -50px) rotate(-180deg)",
-                "-webkit-transform": "translate(0, -50px) rotate(-180deg)"
-              },
-              "100%": {
-                "transform": "translate(0, 0) rotate(-180deg)",
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@-webkit-keyframes object_two": {
-              "25%": {
-                "-webkit-transform": "translate(50px, 0) rotate(-180deg)"
-              },
-              "100%": {
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@keyframes object_two": {
-              "25%": {
-                "transform": "translate(50px, 0) rotate(-180deg)",
-                "-webkit-transform": "translate(50px, 0) rotate(-180deg)"
-              },
-              "100%": {
-                "transform": "translate(0, 0) rotate(-180deg)",
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@-webkit-keyframes object_three": {
-              "25%": {
-                "-webkit-transform": "translate(-50px, 0) rotate(-180deg)"
-              },
-              "100%": {
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@keyframes object_three": {
-              "25%": {
-                "transform": "translate(-50px, 0) rotate(-180deg)",
-                "-webkit-transform": "translate(-50px, 0) rotate(-180deg)"
-              },
-              "100%": {
-                "transform": "translate(0, 0) rotate(-180deg)",
-                "-webkit-transform": "rtranslate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@-webkit-keyframes object_four": {
-              "25%": {
-                "-webkit-transform": "translate(0, 50px) rotate(-180deg)"
-              },
-              "100%": {
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@keyframes object_four": {
-              "25%": {
-                "transform": "translate(0, 50px) rotate(-180deg)",
-                "-webkit-transform": "translate(0, 50px) rotate(-180deg)"
-              },
-              "100%": {
-                "transform": "translate(0, 0) rotate(-180deg)",
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            }
-          },
-          "_customHTML": "<section class=\"mbr-section\" group=\"Dentaura Preloader\" plugins=\"Dentaurapreloader\" once=\"Dentaura Preloader\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"color\" title=\"Background Color\" name=\"preBgcolor\" value=\"#000000\">\n        <input type=\"color\" title=\"Preloader Color\" name=\"preLoadcolor\" value=\"#f7ed4a\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <!-- Dentaura Preloader -->\n        <div id=\"loading-preloader\">\n            <div id=\"loading-center\">\n                <div id=\"loading-center-absolute\">\n                    <div class=\"object\" id=\"object_one\"></div>\n                    <div class=\"object\" id=\"object_two\"></div>\n                    <div class=\"object\" id=\"object_three\"></div>\n                    <div class=\"object\" id=\"object_four\"></div>\n                </div>\n            </div>\n        </div>\n    <!--End of Dentaura Preloader -->\n    \n</section>",
-          "_anchor": "preloader1-7r",
-          "_isUserblock": true,
-          "_cid": "soDaCkJUkw",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": "Dentaura Preloader",
-          "_params": {}
-        },
-        {
           "_name": "progress-bars1",
           "_sourceTheme": "mobirise5",
           "_styles": {
@@ -4975,13 +4876,162 @@
           },
           "_name": "footer7",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section class=\"footer7\" group=\"Footers\" global=\"\" once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked=\"\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected=\"\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"><b><a href=\"#top\" class=\"text-white\">Back to top</a></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"footer7\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"><b><a href=\"#top\" class=\"text-white\">Back to top</a></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
           "_anchor": "footer7-4y",
           "_isUserblock": true,
           "_cid": "sowMa0tJvj",
           "_protectedParams": [],
           "_global": true,
           "_once": "footers",
+          "_params": {}
+        },
+        {
+          "_name": "preloader1",
+          "_sourceTheme": "dentauram4",
+          "_styles": {
+            "#loading-center": {
+              "width": "100%",
+              "height": "100vh",
+              "position": "relative",
+              "background-color": "@preBgcolor"
+            },
+            "#loading-center-absolute": {
+              "position": "absolute",
+              "left": "50%",
+              "top": "50%",
+              "height": "50px",
+              "width": "50px",
+              "margin-top": "-25px",
+              "margin-left": "-25px",
+              "-ms-transform": "rotate(45deg)",
+              "-webkit-transform": "rotate(45deg)",
+              "transform": "rotate(45deg)",
+              "-webkit-animation": "loading-center-absolute 1.5s infinite",
+              "animation": "loading-center-absolute 1.5s infinite"
+            },
+            "#skip-loading": {
+              "text-align": "center",
+              "position": "relative",
+              "top": "85%"
+            },
+            ".object": {
+              "width": "25px",
+              "height": "25px",
+              "background-color": "@preLoadcolor",
+              "float": "left"
+            },
+            "#object_one": {
+              "-webkit-animation": "object_one 1.5s infinite",
+              "animation": "object_one 1.5s infinite"
+            },
+            "#object_two": {
+              "-webkit-animation": "object_two 1.5s infinite",
+              "animation": "object_two 1.5s infinite"
+            },
+            "#object_three": {
+              "-webkit-animation": "object_three 1.5s infinite",
+              "animation": "object_three 1.5s infinite"
+            },
+            "#object_four": {
+              "-webkit-animation": "object_four 1.5s infinite",
+              "animation": "object_four 1.5s infinite"
+            },
+            "@-webkit-keyframes loading-center-absolute": {
+              "100%": {
+                "-webkit-transform": "rotate(-45deg)"
+              }
+            },
+            "@keyframes loading-center-absolute": {
+              "100%": {
+                "transform": "rotate(-45deg)",
+                "-webkit-transform": "rotate(-45deg)"
+              }
+            },
+            "@-webkit-keyframes object_one": {
+              "25%": {
+                "-webkit-transform": "translate(0, -50px) rotate(-180deg)"
+              },
+              "100%": {
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@keyframes object_one": {
+              "25%": {
+                "transform": "translate(0, -50px) rotate(-180deg)",
+                "-webkit-transform": "translate(0, -50px) rotate(-180deg)"
+              },
+              "100%": {
+                "transform": "translate(0, 0) rotate(-180deg)",
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@-webkit-keyframes object_two": {
+              "25%": {
+                "-webkit-transform": "translate(50px, 0) rotate(-180deg)"
+              },
+              "100%": {
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@keyframes object_two": {
+              "25%": {
+                "transform": "translate(50px, 0) rotate(-180deg)",
+                "-webkit-transform": "translate(50px, 0) rotate(-180deg)"
+              },
+              "100%": {
+                "transform": "translate(0, 0) rotate(-180deg)",
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@-webkit-keyframes object_three": {
+              "25%": {
+                "-webkit-transform": "translate(-50px, 0) rotate(-180deg)"
+              },
+              "100%": {
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@keyframes object_three": {
+              "25%": {
+                "transform": "translate(-50px, 0) rotate(-180deg)",
+                "-webkit-transform": "translate(-50px, 0) rotate(-180deg)"
+              },
+              "100%": {
+                "transform": "translate(0, 0) rotate(-180deg)",
+                "-webkit-transform": "rtranslate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@-webkit-keyframes object_four": {
+              "25%": {
+                "-webkit-transform": "translate(0, 50px) rotate(-180deg)"
+              },
+              "100%": {
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@keyframes object_four": {
+              "25%": {
+                "transform": "translate(0, 50px) rotate(-180deg)",
+                "-webkit-transform": "translate(0, 50px) rotate(-180deg)"
+              },
+              "100%": {
+                "transform": "translate(0, 0) rotate(-180deg)",
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "P": {
+              "color": "#ff8a8a"
+            }
+          },
+          "_customHTML": "<section class=\"mbr-section\" group=\"Dentaura Preloader\" plugins=\"Dentaurapreloader\" once=\"Dentaura Preloader\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"color\" title=\"Background Color\" name=\"preBgcolor\" value=\"#000000\">\n        <input type=\"color\" title=\"Preloader Color\" name=\"preLoadcolor\" value=\"#f7ed4a\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <!-- Dentaura Preloader -->\n        <div id=\"loading-preloader\">\n            <div id=\"loading-center\">\n                <div id=\"loading-center-absolute\">\n                    <div class=\"object\" id=\"object_one\"></div>\n                    <div class=\"object\" id=\"object_two\"></div>\n                    <div class=\"object\" id=\"object_three\"></div>\n                    <div class=\"object\" id=\"object_four\"></div>\n                </div>\n                <div id=\"skip-loading\" style=\"display:none\">\n                  <p><a href=\"#\" id=\"skip-loading-link\" class=\"text-warning\">Skip loading?</a></p>\n                </div>\n            </div>\n        </div>\n\n\n    <!--End of Dentaura Preloader -->\n    \n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_anchor": "preloader1-89",
+          "_isUserblock": true,
+          "_cid": "soGxhO3RyX",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": "Dentaura Preloader",
           "_params": {}
         }
       ]
@@ -5736,6 +5786,155 @@
           "_params": {}
         },
         {
+          "_name": "preloader1",
+          "_sourceTheme": "dentauram4",
+          "_styles": {
+            "#loading-center": {
+              "width": "100%",
+              "height": "100vh",
+              "position": "relative",
+              "background-color": "@preBgcolor"
+            },
+            "#loading-center-absolute": {
+              "position": "absolute",
+              "left": "50%",
+              "top": "50%",
+              "height": "50px",
+              "width": "50px",
+              "margin-top": "-25px",
+              "margin-left": "-25px",
+              "-ms-transform": "rotate(45deg)",
+              "-webkit-transform": "rotate(45deg)",
+              "transform": "rotate(45deg)",
+              "-webkit-animation": "loading-center-absolute 1.5s infinite",
+              "animation": "loading-center-absolute 1.5s infinite"
+            },
+            "#skip-loading": {
+              "text-align": "center",
+              "position": "relative",
+              "top": "85%"
+            },
+            ".object": {
+              "width": "25px",
+              "height": "25px",
+              "background-color": "@preLoadcolor",
+              "float": "left"
+            },
+            "#object_one": {
+              "-webkit-animation": "object_one 1.5s infinite",
+              "animation": "object_one 1.5s infinite"
+            },
+            "#object_two": {
+              "-webkit-animation": "object_two 1.5s infinite",
+              "animation": "object_two 1.5s infinite"
+            },
+            "#object_three": {
+              "-webkit-animation": "object_three 1.5s infinite",
+              "animation": "object_three 1.5s infinite"
+            },
+            "#object_four": {
+              "-webkit-animation": "object_four 1.5s infinite",
+              "animation": "object_four 1.5s infinite"
+            },
+            "@-webkit-keyframes loading-center-absolute": {
+              "100%": {
+                "-webkit-transform": "rotate(-45deg)"
+              }
+            },
+            "@keyframes loading-center-absolute": {
+              "100%": {
+                "transform": "rotate(-45deg)",
+                "-webkit-transform": "rotate(-45deg)"
+              }
+            },
+            "@-webkit-keyframes object_one": {
+              "25%": {
+                "-webkit-transform": "translate(0, -50px) rotate(-180deg)"
+              },
+              "100%": {
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@keyframes object_one": {
+              "25%": {
+                "transform": "translate(0, -50px) rotate(-180deg)",
+                "-webkit-transform": "translate(0, -50px) rotate(-180deg)"
+              },
+              "100%": {
+                "transform": "translate(0, 0) rotate(-180deg)",
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@-webkit-keyframes object_two": {
+              "25%": {
+                "-webkit-transform": "translate(50px, 0) rotate(-180deg)"
+              },
+              "100%": {
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@keyframes object_two": {
+              "25%": {
+                "transform": "translate(50px, 0) rotate(-180deg)",
+                "-webkit-transform": "translate(50px, 0) rotate(-180deg)"
+              },
+              "100%": {
+                "transform": "translate(0, 0) rotate(-180deg)",
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@-webkit-keyframes object_three": {
+              "25%": {
+                "-webkit-transform": "translate(-50px, 0) rotate(-180deg)"
+              },
+              "100%": {
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@keyframes object_three": {
+              "25%": {
+                "transform": "translate(-50px, 0) rotate(-180deg)",
+                "-webkit-transform": "translate(-50px, 0) rotate(-180deg)"
+              },
+              "100%": {
+                "transform": "translate(0, 0) rotate(-180deg)",
+                "-webkit-transform": "rtranslate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@-webkit-keyframes object_four": {
+              "25%": {
+                "-webkit-transform": "translate(0, 50px) rotate(-180deg)"
+              },
+              "100%": {
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@keyframes object_four": {
+              "25%": {
+                "transform": "translate(0, 50px) rotate(-180deg)",
+                "-webkit-transform": "translate(0, 50px) rotate(-180deg)"
+              },
+              "100%": {
+                "transform": "translate(0, 0) rotate(-180deg)",
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "P": {
+              "color": "#ff8a8a"
+            }
+          },
+          "_customHTML": "<section class=\"mbr-section\" group=\"Dentaura Preloader\" plugins=\"Dentaurapreloader\" once=\"Dentaura Preloader\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"color\" title=\"Background Color\" name=\"preBgcolor\" value=\"#000000\">\n        <input type=\"color\" title=\"Preloader Color\" name=\"preLoadcolor\" value=\"#f7ed4a\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <!-- Dentaura Preloader -->\n        <div id=\"loading-preloader\">\n            <div id=\"loading-center\">\n                <div id=\"loading-center-absolute\">\n                    <div class=\"object\" id=\"object_one\"></div>\n                    <div class=\"object\" id=\"object_two\"></div>\n                    <div class=\"object\" id=\"object_three\"></div>\n                    <div class=\"object\" id=\"object_four\"></div>\n                </div>\n                <div id=\"skip-loading\" style=\"display:none\">\n                  <p><a href=\"#\" id=\"skip-loading-link\" class=\"text-warning\">Skip loading?</a></p>\n                </div>\n            </div>\n        </div>\n\n\n    <!--End of Dentaura Preloader -->\n    \n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_anchor": "preloader1-8a",
+          "_isUserblock": true,
+          "_cid": "soGxjV7shr",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": "Dentaura Preloader",
+          "_params": {}
+        },
+        {
           "_name": "progress-bars1",
           "_sourceTheme": "mobirise5",
           "_styles": {
@@ -5934,145 +6133,6 @@
           "_params": {}
         },
         {
-          "_name": "preloader1",
-          "_sourceTheme": "dentauram4",
-          "_styles": {
-            "#loading-center": {
-              "width": "100%",
-              "height": "100vh",
-              "position": "relative",
-              "background-color": "@preBgcolor"
-            },
-            "#loading-center-absolute": {
-              "position": "absolute",
-              "left": "50%",
-              "top": "50%",
-              "height": "50px",
-              "width": "50px",
-              "margin-top": "-25px",
-              "margin-left": "-25px",
-              "-ms-transform": "rotate(45deg)",
-              "-webkit-transform": "rotate(45deg)",
-              "transform": "rotate(45deg)",
-              "-webkit-animation": "loading-center-absolute 1.5s infinite",
-              "animation": "loading-center-absolute 1.5s infinite"
-            },
-            ".object": {
-              "width": "25px",
-              "height": "25px",
-              "background-color": "@preLoadcolor",
-              "float": "left"
-            },
-            "#object_one": {
-              "-webkit-animation": "object_one 1.5s infinite",
-              "animation": "object_one 1.5s infinite"
-            },
-            "#object_two": {
-              "-webkit-animation": "object_two 1.5s infinite",
-              "animation": "object_two 1.5s infinite"
-            },
-            "#object_three": {
-              "-webkit-animation": "object_three 1.5s infinite",
-              "animation": "object_three 1.5s infinite"
-            },
-            "#object_four": {
-              "-webkit-animation": "object_four 1.5s infinite",
-              "animation": "object_four 1.5s infinite"
-            },
-            "@-webkit-keyframes loading-center-absolute": {
-              "100%": {
-                "-webkit-transform": "rotate(-45deg)"
-              }
-            },
-            "@keyframes loading-center-absolute": {
-              "100%": {
-                "transform": "rotate(-45deg)",
-                "-webkit-transform": "rotate(-45deg)"
-              }
-            },
-            "@-webkit-keyframes object_one": {
-              "25%": {
-                "-webkit-transform": "translate(0, -50px) rotate(-180deg)"
-              },
-              "100%": {
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@keyframes object_one": {
-              "25%": {
-                "transform": "translate(0, -50px) rotate(-180deg)",
-                "-webkit-transform": "translate(0, -50px) rotate(-180deg)"
-              },
-              "100%": {
-                "transform": "translate(0, 0) rotate(-180deg)",
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@-webkit-keyframes object_two": {
-              "25%": {
-                "-webkit-transform": "translate(50px, 0) rotate(-180deg)"
-              },
-              "100%": {
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@keyframes object_two": {
-              "25%": {
-                "transform": "translate(50px, 0) rotate(-180deg)",
-                "-webkit-transform": "translate(50px, 0) rotate(-180deg)"
-              },
-              "100%": {
-                "transform": "translate(0, 0) rotate(-180deg)",
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@-webkit-keyframes object_three": {
-              "25%": {
-                "-webkit-transform": "translate(-50px, 0) rotate(-180deg)"
-              },
-              "100%": {
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@keyframes object_three": {
-              "25%": {
-                "transform": "translate(-50px, 0) rotate(-180deg)",
-                "-webkit-transform": "translate(-50px, 0) rotate(-180deg)"
-              },
-              "100%": {
-                "transform": "translate(0, 0) rotate(-180deg)",
-                "-webkit-transform": "rtranslate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@-webkit-keyframes object_four": {
-              "25%": {
-                "-webkit-transform": "translate(0, 50px) rotate(-180deg)"
-              },
-              "100%": {
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@keyframes object_four": {
-              "25%": {
-                "transform": "translate(0, 50px) rotate(-180deg)",
-                "-webkit-transform": "translate(0, 50px) rotate(-180deg)"
-              },
-              "100%": {
-                "transform": "translate(0, 0) rotate(-180deg)",
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            }
-          },
-          "_customHTML": "<section class=\"mbr-section\" group=\"Dentaura Preloader\" plugins=\"Dentaurapreloader\" once=\"Dentaura Preloader\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"color\" title=\"Background Color\" name=\"preBgcolor\" value=\"#000000\">\n        <input type=\"color\" title=\"Preloader Color\" name=\"preLoadcolor\" value=\"#f7ed4a\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <!-- Dentaura Preloader -->\n        <div id=\"loading-preloader\">\n            <div id=\"loading-center\">\n                <div id=\"loading-center-absolute\">\n                    <div class=\"object\" id=\"object_one\"></div>\n                    <div class=\"object\" id=\"object_two\"></div>\n                    <div class=\"object\" id=\"object_three\"></div>\n                    <div class=\"object\" id=\"object_four\"></div>\n                </div>\n            </div>\n        </div>\n    <!--End of Dentaura Preloader -->\n    \n</section>",
-          "_anchor": "preloader1-7s",
-          "_isUserblock": true,
-          "_cid": "soDaDBUday",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": "Dentaura Preloader",
-          "_params": {}
-        },
-        {
           "alias": false,
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
@@ -6086,7 +6146,7 @@
           },
           "_name": "footer7",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section class=\"footer7\" group=\"Footers\" global=\"\" once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked=\"\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected=\"\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"><b><a href=\"#top\" class=\"text-white\">Back to top</a></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"footer7\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"><b><a href=\"#top\" class=\"text-white\">Back to top</a></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
           "_anchor": "footer7-4y",
           "_isUserblock": true,
           "_cid": "sowMa0tJvj",
@@ -6543,6 +6603,29 @@
           "_params": {}
         },
         {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            }
+          },
+          "_name": "footer7",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section class=\"footer7\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"><b><a href=\"#top\" class=\"text-white\">Back to top</a></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "footer7-4y",
+          "_isUserblock": true,
+          "_cid": "sowMa0tJvj",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {}
+        },
+        {
           "_name": "preloader1",
           "_sourceTheme": "dentauram4",
           "_styles": {
@@ -6565,6 +6648,11 @@
               "transform": "rotate(45deg)",
               "-webkit-animation": "loading-center-absolute 1.5s infinite",
               "animation": "loading-center-absolute 1.5s infinite"
+            },
+            "#skip-loading": {
+              "text-align": "center",
+              "position": "relative",
+              "top": "85%"
             },
             ".object": {
               "width": "25px",
@@ -6670,38 +6758,20 @@
                 "transform": "translate(0, 0) rotate(-180deg)",
                 "-webkit-transform": "translate(0, 0) rotate(-180deg)"
               }
+            },
+            "P": {
+              "color": "#ff8a8a"
             }
           },
-          "_customHTML": "<section class=\"mbr-section\" group=\"Dentaura Preloader\" plugins=\"Dentaurapreloader\" once=\"Dentaura Preloader\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"color\" title=\"Background Color\" name=\"preBgcolor\" value=\"#000000\">\n        <input type=\"color\" title=\"Preloader Color\" name=\"preLoadcolor\" value=\"#f7ed4a\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <!-- Dentaura Preloader -->\n        <div id=\"loading-preloader\">\n            <div id=\"loading-center\">\n                <div id=\"loading-center-absolute\">\n                    <div class=\"object\" id=\"object_one\"></div>\n                    <div class=\"object\" id=\"object_two\"></div>\n                    <div class=\"object\" id=\"object_three\"></div>\n                    <div class=\"object\" id=\"object_four\"></div>\n                </div>\n            </div>\n        </div>\n    <!--End of Dentaura Preloader -->\n    \n</section>",
-          "_anchor": "preloader1-7m",
+          "_customHTML": "<section class=\"mbr-section\" group=\"Dentaura Preloader\" plugins=\"Dentaurapreloader\" once=\"Dentaura Preloader\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"color\" title=\"Background Color\" name=\"preBgcolor\" value=\"#000000\">\n        <input type=\"color\" title=\"Preloader Color\" name=\"preLoadcolor\" value=\"#f7ed4a\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <!-- Dentaura Preloader -->\n        <div id=\"loading-preloader\">\n            <div id=\"loading-center\">\n                <div id=\"loading-center-absolute\">\n                    <div class=\"object\" id=\"object_one\"></div>\n                    <div class=\"object\" id=\"object_two\"></div>\n                    <div class=\"object\" id=\"object_three\"></div>\n                    <div class=\"object\" id=\"object_four\"></div>\n                </div>\n                <div id=\"skip-loading\" style=\"display:none\">\n                  <p><a href=\"#\" id=\"skip-loading-link\" class=\"text-warning\">Skip loading?</a></p>\n                </div>\n            </div>\n        </div>\n\n\n    <!--End of Dentaura Preloader -->\n    \n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_anchor": "preloader1-84",
           "_isUserblock": true,
-          "_cid": "soDau6dm50",
+          "_cid": "soGx4u93Ff",
           "_protectedParams": [],
           "_global": false,
           "_once": "Dentaura Preloader",
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            }
-          },
-          "_name": "footer7",
-          "_sourceTheme": "mobirise5",
-          "_customHTML": "<section class=\"footer7\" group=\"Footers\" global=\"\" once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked=\"\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected=\"\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"><b><a href=\"#top\" class=\"text-white\">Back to top</a></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_anchor": "footer7-4y",
-          "_isUserblock": true,
-          "_cid": "sowMa0tJvj",
-          "_protectedParams": [],
-          "_global": true,
-          "_once": "footers",
           "_params": {}
         }
       ]
@@ -8067,145 +8137,6 @@
           "_params": {}
         },
         {
-          "_name": "preloader1",
-          "_sourceTheme": "dentauram4",
-          "_styles": {
-            "#loading-center": {
-              "width": "100%",
-              "height": "100vh",
-              "position": "relative",
-              "background-color": "@preBgcolor"
-            },
-            "#loading-center-absolute": {
-              "position": "absolute",
-              "left": "50%",
-              "top": "50%",
-              "height": "50px",
-              "width": "50px",
-              "margin-top": "-25px",
-              "margin-left": "-25px",
-              "-ms-transform": "rotate(45deg)",
-              "-webkit-transform": "rotate(45deg)",
-              "transform": "rotate(45deg)",
-              "-webkit-animation": "loading-center-absolute 1.5s infinite",
-              "animation": "loading-center-absolute 1.5s infinite"
-            },
-            ".object": {
-              "width": "25px",
-              "height": "25px",
-              "background-color": "@preLoadcolor",
-              "float": "left"
-            },
-            "#object_one": {
-              "-webkit-animation": "object_one 1.5s infinite",
-              "animation": "object_one 1.5s infinite"
-            },
-            "#object_two": {
-              "-webkit-animation": "object_two 1.5s infinite",
-              "animation": "object_two 1.5s infinite"
-            },
-            "#object_three": {
-              "-webkit-animation": "object_three 1.5s infinite",
-              "animation": "object_three 1.5s infinite"
-            },
-            "#object_four": {
-              "-webkit-animation": "object_four 1.5s infinite",
-              "animation": "object_four 1.5s infinite"
-            },
-            "@-webkit-keyframes loading-center-absolute": {
-              "100%": {
-                "-webkit-transform": "rotate(-45deg)"
-              }
-            },
-            "@keyframes loading-center-absolute": {
-              "100%": {
-                "transform": "rotate(-45deg)",
-                "-webkit-transform": "rotate(-45deg)"
-              }
-            },
-            "@-webkit-keyframes object_one": {
-              "25%": {
-                "-webkit-transform": "translate(0, -50px) rotate(-180deg)"
-              },
-              "100%": {
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@keyframes object_one": {
-              "25%": {
-                "transform": "translate(0, -50px) rotate(-180deg)",
-                "-webkit-transform": "translate(0, -50px) rotate(-180deg)"
-              },
-              "100%": {
-                "transform": "translate(0, 0) rotate(-180deg)",
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@-webkit-keyframes object_two": {
-              "25%": {
-                "-webkit-transform": "translate(50px, 0) rotate(-180deg)"
-              },
-              "100%": {
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@keyframes object_two": {
-              "25%": {
-                "transform": "translate(50px, 0) rotate(-180deg)",
-                "-webkit-transform": "translate(50px, 0) rotate(-180deg)"
-              },
-              "100%": {
-                "transform": "translate(0, 0) rotate(-180deg)",
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@-webkit-keyframes object_three": {
-              "25%": {
-                "-webkit-transform": "translate(-50px, 0) rotate(-180deg)"
-              },
-              "100%": {
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@keyframes object_three": {
-              "25%": {
-                "transform": "translate(-50px, 0) rotate(-180deg)",
-                "-webkit-transform": "translate(-50px, 0) rotate(-180deg)"
-              },
-              "100%": {
-                "transform": "translate(0, 0) rotate(-180deg)",
-                "-webkit-transform": "rtranslate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@-webkit-keyframes object_four": {
-              "25%": {
-                "-webkit-transform": "translate(0, 50px) rotate(-180deg)"
-              },
-              "100%": {
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@keyframes object_four": {
-              "25%": {
-                "transform": "translate(0, 50px) rotate(-180deg)",
-                "-webkit-transform": "translate(0, 50px) rotate(-180deg)"
-              },
-              "100%": {
-                "transform": "translate(0, 0) rotate(-180deg)",
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            }
-          },
-          "_customHTML": "<section class=\"mbr-section\" group=\"Dentaura Preloader\" plugins=\"Dentaurapreloader\" once=\"Dentaura Preloader\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"color\" title=\"Background Color\" name=\"preBgcolor\" value=\"#000000\">\n        <input type=\"color\" title=\"Preloader Color\" name=\"preLoadcolor\" value=\"#f7ed4a\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <!-- Dentaura Preloader -->\n        <div id=\"loading-preloader\">\n            <div id=\"loading-center\">\n                <div id=\"loading-center-absolute\">\n                    <div class=\"object\" id=\"object_one\"></div>\n                    <div class=\"object\" id=\"object_two\"></div>\n                    <div class=\"object\" id=\"object_three\"></div>\n                    <div class=\"object\" id=\"object_four\"></div>\n                </div>\n            </div>\n        </div>\n    <!--End of Dentaura Preloader -->\n    \n</section>",
-          "_anchor": "preloader1-7p",
-          "_isUserblock": true,
-          "_cid": "soDaycfKkj",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": "Dentaura Preloader",
-          "_params": {}
-        },
-        {
           "alias": false,
           "_styles": {
             "& when not (@sticky)": {
@@ -8613,6 +8544,155 @@
           "_params": {}
         },
         {
+          "_name": "preloader1",
+          "_sourceTheme": "dentauram4",
+          "_styles": {
+            "#loading-center": {
+              "width": "100%",
+              "height": "100vh",
+              "position": "relative",
+              "background-color": "@preBgcolor"
+            },
+            "#loading-center-absolute": {
+              "position": "absolute",
+              "left": "50%",
+              "top": "50%",
+              "height": "50px",
+              "width": "50px",
+              "margin-top": "-25px",
+              "margin-left": "-25px",
+              "-ms-transform": "rotate(45deg)",
+              "-webkit-transform": "rotate(45deg)",
+              "transform": "rotate(45deg)",
+              "-webkit-animation": "loading-center-absolute 1.5s infinite",
+              "animation": "loading-center-absolute 1.5s infinite"
+            },
+            "#skip-loading": {
+              "text-align": "center",
+              "position": "relative",
+              "top": "85%"
+            },
+            ".object": {
+              "width": "25px",
+              "height": "25px",
+              "background-color": "@preLoadcolor",
+              "float": "left"
+            },
+            "#object_one": {
+              "-webkit-animation": "object_one 1.5s infinite",
+              "animation": "object_one 1.5s infinite"
+            },
+            "#object_two": {
+              "-webkit-animation": "object_two 1.5s infinite",
+              "animation": "object_two 1.5s infinite"
+            },
+            "#object_three": {
+              "-webkit-animation": "object_three 1.5s infinite",
+              "animation": "object_three 1.5s infinite"
+            },
+            "#object_four": {
+              "-webkit-animation": "object_four 1.5s infinite",
+              "animation": "object_four 1.5s infinite"
+            },
+            "@-webkit-keyframes loading-center-absolute": {
+              "100%": {
+                "-webkit-transform": "rotate(-45deg)"
+              }
+            },
+            "@keyframes loading-center-absolute": {
+              "100%": {
+                "transform": "rotate(-45deg)",
+                "-webkit-transform": "rotate(-45deg)"
+              }
+            },
+            "@-webkit-keyframes object_one": {
+              "25%": {
+                "-webkit-transform": "translate(0, -50px) rotate(-180deg)"
+              },
+              "100%": {
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@keyframes object_one": {
+              "25%": {
+                "transform": "translate(0, -50px) rotate(-180deg)",
+                "-webkit-transform": "translate(0, -50px) rotate(-180deg)"
+              },
+              "100%": {
+                "transform": "translate(0, 0) rotate(-180deg)",
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@-webkit-keyframes object_two": {
+              "25%": {
+                "-webkit-transform": "translate(50px, 0) rotate(-180deg)"
+              },
+              "100%": {
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@keyframes object_two": {
+              "25%": {
+                "transform": "translate(50px, 0) rotate(-180deg)",
+                "-webkit-transform": "translate(50px, 0) rotate(-180deg)"
+              },
+              "100%": {
+                "transform": "translate(0, 0) rotate(-180deg)",
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@-webkit-keyframes object_three": {
+              "25%": {
+                "-webkit-transform": "translate(-50px, 0) rotate(-180deg)"
+              },
+              "100%": {
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@keyframes object_three": {
+              "25%": {
+                "transform": "translate(-50px, 0) rotate(-180deg)",
+                "-webkit-transform": "translate(-50px, 0) rotate(-180deg)"
+              },
+              "100%": {
+                "transform": "translate(0, 0) rotate(-180deg)",
+                "-webkit-transform": "rtranslate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@-webkit-keyframes object_four": {
+              "25%": {
+                "-webkit-transform": "translate(0, 50px) rotate(-180deg)"
+              },
+              "100%": {
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@keyframes object_four": {
+              "25%": {
+                "transform": "translate(0, 50px) rotate(-180deg)",
+                "-webkit-transform": "translate(0, 50px) rotate(-180deg)"
+              },
+              "100%": {
+                "transform": "translate(0, 0) rotate(-180deg)",
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "P": {
+              "color": "#ff8a8a"
+            }
+          },
+          "_customHTML": "<section class=\"mbr-section\" group=\"Dentaura Preloader\" plugins=\"Dentaurapreloader\" once=\"Dentaura Preloader\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"color\" title=\"Background Color\" name=\"preBgcolor\" value=\"#000000\">\n        <input type=\"color\" title=\"Preloader Color\" name=\"preLoadcolor\" value=\"#f7ed4a\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <!-- Dentaura Preloader -->\n        <div id=\"loading-preloader\">\n            <div id=\"loading-center\">\n                <div id=\"loading-center-absolute\">\n                    <div class=\"object\" id=\"object_one\"></div>\n                    <div class=\"object\" id=\"object_two\"></div>\n                    <div class=\"object\" id=\"object_three\"></div>\n                    <div class=\"object\" id=\"object_four\"></div>\n                </div>\n                <div id=\"skip-loading\" style=\"display:none\">\n                  <p><a href=\"#\" id=\"skip-loading-link\" class=\"text-warning\">Skip loading?</a></p>\n                </div>\n            </div>\n        </div>\n\n\n    <!--End of Dentaura Preloader -->\n    \n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_anchor": "preloader1-87",
+          "_isUserblock": true,
+          "_cid": "soGxb6Q7Jp",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": "Dentaura Preloader",
+          "_params": {}
+        },
+        {
           "alias": false,
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
@@ -8626,7 +8706,7 @@
           },
           "_name": "footer7",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section class=\"footer7\" group=\"Footers\" global=\"\" once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked=\"\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected=\"\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"><b><a href=\"#top\" class=\"text-white\">Back to top</a></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"footer7\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"><b><a href=\"#top\" class=\"text-white\">Back to top</a></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
           "_anchor": "footer7-4y",
           "_isUserblock": true,
           "_cid": "sowMa0tJvj",
@@ -9420,145 +9500,6 @@
           "_params": {}
         },
         {
-          "_name": "preloader1",
-          "_sourceTheme": "dentauram4",
-          "_styles": {
-            "#loading-center": {
-              "width": "100%",
-              "height": "100vh",
-              "position": "relative",
-              "background-color": "@preBgcolor"
-            },
-            "#loading-center-absolute": {
-              "position": "absolute",
-              "left": "50%",
-              "top": "50%",
-              "height": "50px",
-              "width": "50px",
-              "margin-top": "-25px",
-              "margin-left": "-25px",
-              "-ms-transform": "rotate(45deg)",
-              "-webkit-transform": "rotate(45deg)",
-              "transform": "rotate(45deg)",
-              "-webkit-animation": "loading-center-absolute 1.5s infinite",
-              "animation": "loading-center-absolute 1.5s infinite"
-            },
-            ".object": {
-              "width": "25px",
-              "height": "25px",
-              "background-color": "@preLoadcolor",
-              "float": "left"
-            },
-            "#object_one": {
-              "-webkit-animation": "object_one 1.5s infinite",
-              "animation": "object_one 1.5s infinite"
-            },
-            "#object_two": {
-              "-webkit-animation": "object_two 1.5s infinite",
-              "animation": "object_two 1.5s infinite"
-            },
-            "#object_three": {
-              "-webkit-animation": "object_three 1.5s infinite",
-              "animation": "object_three 1.5s infinite"
-            },
-            "#object_four": {
-              "-webkit-animation": "object_four 1.5s infinite",
-              "animation": "object_four 1.5s infinite"
-            },
-            "@-webkit-keyframes loading-center-absolute": {
-              "100%": {
-                "-webkit-transform": "rotate(-45deg)"
-              }
-            },
-            "@keyframes loading-center-absolute": {
-              "100%": {
-                "transform": "rotate(-45deg)",
-                "-webkit-transform": "rotate(-45deg)"
-              }
-            },
-            "@-webkit-keyframes object_one": {
-              "25%": {
-                "-webkit-transform": "translate(0, -50px) rotate(-180deg)"
-              },
-              "100%": {
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@keyframes object_one": {
-              "25%": {
-                "transform": "translate(0, -50px) rotate(-180deg)",
-                "-webkit-transform": "translate(0, -50px) rotate(-180deg)"
-              },
-              "100%": {
-                "transform": "translate(0, 0) rotate(-180deg)",
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@-webkit-keyframes object_two": {
-              "25%": {
-                "-webkit-transform": "translate(50px, 0) rotate(-180deg)"
-              },
-              "100%": {
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@keyframes object_two": {
-              "25%": {
-                "transform": "translate(50px, 0) rotate(-180deg)",
-                "-webkit-transform": "translate(50px, 0) rotate(-180deg)"
-              },
-              "100%": {
-                "transform": "translate(0, 0) rotate(-180deg)",
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@-webkit-keyframes object_three": {
-              "25%": {
-                "-webkit-transform": "translate(-50px, 0) rotate(-180deg)"
-              },
-              "100%": {
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@keyframes object_three": {
-              "25%": {
-                "transform": "translate(-50px, 0) rotate(-180deg)",
-                "-webkit-transform": "translate(-50px, 0) rotate(-180deg)"
-              },
-              "100%": {
-                "transform": "translate(0, 0) rotate(-180deg)",
-                "-webkit-transform": "rtranslate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@-webkit-keyframes object_four": {
-              "25%": {
-                "-webkit-transform": "translate(0, 50px) rotate(-180deg)"
-              },
-              "100%": {
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@keyframes object_four": {
-              "25%": {
-                "transform": "translate(0, 50px) rotate(-180deg)",
-                "-webkit-transform": "translate(0, 50px) rotate(-180deg)"
-              },
-              "100%": {
-                "transform": "translate(0, 0) rotate(-180deg)",
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            }
-          },
-          "_customHTML": "<section class=\"mbr-section\" group=\"Dentaura Preloader\" plugins=\"Dentaurapreloader\" once=\"Dentaura Preloader\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"color\" title=\"Background Color\" name=\"preBgcolor\" value=\"#000000\">\n        <input type=\"color\" title=\"Preloader Color\" name=\"preLoadcolor\" value=\"#f7ed4a\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <!-- Dentaura Preloader -->\n        <div id=\"loading-preloader\">\n            <div id=\"loading-center\">\n                <div id=\"loading-center-absolute\">\n                    <div class=\"object\" id=\"object_one\"></div>\n                    <div class=\"object\" id=\"object_two\"></div>\n                    <div class=\"object\" id=\"object_three\"></div>\n                    <div class=\"object\" id=\"object_four\"></div>\n                </div>\n            </div>\n        </div>\n    <!--End of Dentaura Preloader -->\n    \n</section>",
-          "_anchor": "preloader1-7t",
-          "_isUserblock": true,
-          "_cid": "soDaF0PEoI",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": "Dentaura Preloader",
-          "_params": {}
-        },
-        {
           "_name": "progress-bars1",
           "_sourceTheme": "mobirise5",
           "_styles": {
@@ -9757,6 +9698,155 @@
           "_params": {}
         },
         {
+          "_name": "preloader1",
+          "_sourceTheme": "dentauram4",
+          "_styles": {
+            "#loading-center": {
+              "width": "100%",
+              "height": "100vh",
+              "position": "relative",
+              "background-color": "@preBgcolor"
+            },
+            "#loading-center-absolute": {
+              "position": "absolute",
+              "left": "50%",
+              "top": "50%",
+              "height": "50px",
+              "width": "50px",
+              "margin-top": "-25px",
+              "margin-left": "-25px",
+              "-ms-transform": "rotate(45deg)",
+              "-webkit-transform": "rotate(45deg)",
+              "transform": "rotate(45deg)",
+              "-webkit-animation": "loading-center-absolute 1.5s infinite",
+              "animation": "loading-center-absolute 1.5s infinite"
+            },
+            "#skip-loading": {
+              "text-align": "center",
+              "position": "relative",
+              "top": "85%"
+            },
+            ".object": {
+              "width": "25px",
+              "height": "25px",
+              "background-color": "@preLoadcolor",
+              "float": "left"
+            },
+            "#object_one": {
+              "-webkit-animation": "object_one 1.5s infinite",
+              "animation": "object_one 1.5s infinite"
+            },
+            "#object_two": {
+              "-webkit-animation": "object_two 1.5s infinite",
+              "animation": "object_two 1.5s infinite"
+            },
+            "#object_three": {
+              "-webkit-animation": "object_three 1.5s infinite",
+              "animation": "object_three 1.5s infinite"
+            },
+            "#object_four": {
+              "-webkit-animation": "object_four 1.5s infinite",
+              "animation": "object_four 1.5s infinite"
+            },
+            "@-webkit-keyframes loading-center-absolute": {
+              "100%": {
+                "-webkit-transform": "rotate(-45deg)"
+              }
+            },
+            "@keyframes loading-center-absolute": {
+              "100%": {
+                "transform": "rotate(-45deg)",
+                "-webkit-transform": "rotate(-45deg)"
+              }
+            },
+            "@-webkit-keyframes object_one": {
+              "25%": {
+                "-webkit-transform": "translate(0, -50px) rotate(-180deg)"
+              },
+              "100%": {
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@keyframes object_one": {
+              "25%": {
+                "transform": "translate(0, -50px) rotate(-180deg)",
+                "-webkit-transform": "translate(0, -50px) rotate(-180deg)"
+              },
+              "100%": {
+                "transform": "translate(0, 0) rotate(-180deg)",
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@-webkit-keyframes object_two": {
+              "25%": {
+                "-webkit-transform": "translate(50px, 0) rotate(-180deg)"
+              },
+              "100%": {
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@keyframes object_two": {
+              "25%": {
+                "transform": "translate(50px, 0) rotate(-180deg)",
+                "-webkit-transform": "translate(50px, 0) rotate(-180deg)"
+              },
+              "100%": {
+                "transform": "translate(0, 0) rotate(-180deg)",
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@-webkit-keyframes object_three": {
+              "25%": {
+                "-webkit-transform": "translate(-50px, 0) rotate(-180deg)"
+              },
+              "100%": {
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@keyframes object_three": {
+              "25%": {
+                "transform": "translate(-50px, 0) rotate(-180deg)",
+                "-webkit-transform": "translate(-50px, 0) rotate(-180deg)"
+              },
+              "100%": {
+                "transform": "translate(0, 0) rotate(-180deg)",
+                "-webkit-transform": "rtranslate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@-webkit-keyframes object_four": {
+              "25%": {
+                "-webkit-transform": "translate(0, 50px) rotate(-180deg)"
+              },
+              "100%": {
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@keyframes object_four": {
+              "25%": {
+                "transform": "translate(0, 50px) rotate(-180deg)",
+                "-webkit-transform": "translate(0, 50px) rotate(-180deg)"
+              },
+              "100%": {
+                "transform": "translate(0, 0) rotate(-180deg)",
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "P": {
+              "color": "#ff8a8a"
+            }
+          },
+          "_customHTML": "<section class=\"mbr-section\" group=\"Dentaura Preloader\" plugins=\"Dentaurapreloader\" once=\"Dentaura Preloader\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"color\" title=\"Background Color\" name=\"preBgcolor\" value=\"#000000\">\n        <input type=\"color\" title=\"Preloader Color\" name=\"preLoadcolor\" value=\"#f7ed4a\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <!-- Dentaura Preloader -->\n        <div id=\"loading-preloader\">\n            <div id=\"loading-center\">\n                <div id=\"loading-center-absolute\">\n                    <div class=\"object\" id=\"object_one\"></div>\n                    <div class=\"object\" id=\"object_two\"></div>\n                    <div class=\"object\" id=\"object_three\"></div>\n                    <div class=\"object\" id=\"object_four\"></div>\n                </div>\n                <div id=\"skip-loading\" style=\"display:none\">\n                  <p><a href=\"#\" id=\"skip-loading-link\" class=\"text-warning\">Skip loading?</a></p>\n                </div>\n            </div>\n        </div>\n\n\n    <!--End of Dentaura Preloader -->\n    \n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_anchor": "preloader1-8b",
+          "_isUserblock": true,
+          "_cid": "soGxlNB9EJ",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": "Dentaura Preloader",
+          "_params": {}
+        },
+        {
           "alias": false,
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
@@ -9770,7 +9860,7 @@
           },
           "_name": "footer7",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section class=\"footer7\" group=\"Footers\" global=\"\" once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked=\"\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected=\"\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"><b><a href=\"#top\" class=\"text-white\">Back to top</a></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"footer7\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"><b><a href=\"#top\" class=\"text-white\">Back to top</a></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
           "_isUserblock": true,
           "_cid": "soAEUNPa0R",
           "_anchor": "footer7-6h",
@@ -10508,7 +10598,7 @@
           },
           "_name": "footer7",
           "_sourceTheme": "mobirise5",
-          "_customHTML": "<section class=\"footer7\" group=\"Footers\" global=\"\" once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked=\"\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax=\"\">\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected=\"\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked=\"\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay &amp;&amp; bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"><b><a href=\"#top\" class=\"text-white\">Back to top</a></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"footer7\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"><b><a href=\"#top\" class=\"text-white\">Back to top</a></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
           "_isUserblock": true,
           "_cid": "soBCVuChMH",
           "_anchor": "footer7-7b",
@@ -10540,6 +10630,11 @@
               "transform": "rotate(45deg)",
               "-webkit-animation": "loading-center-absolute 1.5s infinite",
               "animation": "loading-center-absolute 1.5s infinite"
+            },
+            "#skip-loading": {
+              "text-align": "center",
+              "position": "relative",
+              "top": "85%"
             },
             ".object": {
               "width": "25px",
@@ -10645,12 +10740,17 @@
                 "transform": "translate(0, 0) rotate(-180deg)",
                 "-webkit-transform": "translate(0, 0) rotate(-180deg)"
               }
+            },
+            "P": {
+              "color": "#ff8a8a"
             }
           },
-          "_customHTML": "<section class=\"mbr-section\" group=\"Dentaura Preloader\" plugins=\"Dentaurapreloader\" once=\"Dentaura Preloader\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"color\" title=\"Background Color\" name=\"preBgcolor\" value=\"#000000\">\n        <input type=\"color\" title=\"Preloader Color\" name=\"preLoadcolor\" value=\"#f7ed4a\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <!-- Dentaura Preloader -->\n        <div id=\"loading-preloader\">\n            <div id=\"loading-center\">\n                <div id=\"loading-center-absolute\">\n                    <div class=\"object\" id=\"object_one\"></div>\n                    <div class=\"object\" id=\"object_two\"></div>\n                    <div class=\"object\" id=\"object_three\"></div>\n                    <div class=\"object\" id=\"object_four\"></div>\n                </div>\n            </div>\n        </div>\n    <!--End of Dentaura Preloader -->\n    \n</section>",
-          "_anchor": "preloader1-7u",
+          "_customHTML": "<section class=\"mbr-section\" group=\"Dentaura Preloader\" plugins=\"Dentaurapreloader\" once=\"Dentaura Preloader\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"color\" title=\"Background Color\" name=\"preBgcolor\" value=\"#000000\">\n        <input type=\"color\" title=\"Preloader Color\" name=\"preLoadcolor\" value=\"#f7ed4a\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <!-- Dentaura Preloader -->\n        <div id=\"loading-preloader\">\n            <div id=\"loading-center\">\n                <div id=\"loading-center-absolute\">\n                    <div class=\"object\" id=\"object_one\"></div>\n                    <div class=\"object\" id=\"object_two\"></div>\n                    <div class=\"object\" id=\"object_three\"></div>\n                    <div class=\"object\" id=\"object_four\"></div>\n                </div>\n                <div id=\"skip-loading\" style=\"display:none\">\n                  <p><a href=\"#\" id=\"skip-loading-link\" class=\"text-warning\">Skip loading?</a></p>\n                </div>\n            </div>\n        </div>\n\n\n    <!--End of Dentaura Preloader -->\n    \n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_anchor": "preloader1-8c",
           "_isUserblock": true,
-          "_cid": "soDaGglo0o",
+          "_cid": "soGxnycw6B",
           "_protectedParams": [],
           "_global": false,
           "_once": "Dentaura Preloader",
