@@ -45,6 +45,7 @@ pre[class*="language-"] {
     overflow-x: auto !important;
 	max-height: 512px;
 	max-width: 50%;
+	min-width: 50%;
 }
 
 /* Inline code */
