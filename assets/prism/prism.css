@@ -40,7 +40,11 @@ pre[class*="language-"] {
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-	background: #272822;
+	background: #404040;
+	overflow-y: auto !important;
+    overflow-x: auto !important;
+	max-height: 512px;
+	max-width: 50%;
 }
 
 /* Inline code */
