@@ -11,6 +11,7 @@
   
   
   <title>Stationery War</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="assets/tether/tether.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
@@ -154,9 +155,103 @@ border-radius: 10px;
                 <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5"><strong>
                     Details
                 </strong></h4>
-                <p class="mbr-text mbr-fonts-style display-7">Update later...<br><br></p>
-                <hr class="rounded">
-                <p class="mbr-text mbr-fonts-style display-7"><strong>Creation date: </strong>December, 2020</p>
+                <p class="mbr-text mbr-fonts-style display-7">Stationery War an interactive game which the player will use a plane-like controller built with stationeries to control a virtual plane. When we were a kid, we have tried to use stationeries to build something like a plane or a car, maybe also
+weapons and architecture.
+and with this project, we want to bring back our child memory and combine it with new technologies.<br></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content5 cid-soOvDkotgO" id="content5-9b">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5"><strong>Hardware:&nbsp;</strong></h4>
+                <p class="mbr-text mbr-fonts-style display-7">For the base design of the controller, we attached a ruler and the breadboard on top of a highlighter, which looks like the airplane we built as a child using stationeries, while 2 solenoids are attached to the bottom of the ruler which looks like 2 machine guns of the plane.<br></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="slider2 cid-soOx4QwUeR" id="slider2-9g">
+    
+
+    
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-12">
+                <div class="carousel slide carousel-fade" id="soOyORhduX" data-interval="5000">
+                    
+                    <ol class="carousel-indicators">
+                        <li data-slide-to="0" class="active" data-target="#soOyORhduX"></li><li data-slide-to="1" class="active" data-target="#soOyORhduX"></li>
+                        
+                        
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item slider-image item active">
+                            <div class="item-wrapper">
+                                <img class="d-block w-100" src="assets/images/arduino-screenshot.jpg" data-slide-to="0">
+                                <div class="carousel-caption d-none d-md-block">
+                                    
+                                    <p class="mbr-section-text mbr-fonts-style display-7"></p>
+                                </div>
+                            </div>
+                        </div><div class="carousel-item slider-image item">
+                            <div class="item-wrapper">
+                                <img class="d-block w-100" src="assets/images/circuit-design.png" data-slide-to="1">
+                                <div class="carousel-caption d-none d-md-block">
+                                    
+                                    <p class="mbr-section-text mbr-fonts-style display-7"></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#soOyORhduX">
+                        <span class="mobi-mbri mobi-mbri-arrow-prev" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control carousel-control-next" role="button" data-slide="next" href="#soOyORhduX">
+                        <span class="mobi-mbri mobi-mbri-arrow-next" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content5 cid-soOw8G2hDd" id="content5-9d">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5"><strong>Software:&nbsp;</strong></h4>
+                <p class="mbr-text mbr-fonts-style display-7">The game is built in Unity3D using version 2019.4.14f1. It is an 3d infinite-level game, which&nbsp;requires the player to control the spaceship to destroy in-coming enemy planes and avoid
+architecture at the same time. To control the movement of the spaceship, rotate the plane-like
+controller to do vertical and horizontal movement. Push the button to fire bullets to attack enemy
+planes.<br></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content5 cid-soOwpUKy2G" id="content5-9e">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5"><strong>Connections between Arduino&nbsp;and Unity:&nbsp;</strong></h4>
+                <p class="mbr-text mbr-fonts-style display-7">In Arduino, there is a function called sentSensorData(), and it will send 4 values, which are
+separated by a ; mark. The first 3 values will be the xyz rotation of the accelerometer and the
+last value will be a 0/1 boolean value to indicate whether the button is pressed or not. Arduino
+prints the value in the serial monitor and sends it to unity. The source code for the&nbsp;Arduino part is shown below:<br></p>
             </div>
         </div>
     </div>
@@ -283,6 +378,37 @@ border-radius: 10px;
 
 </div></div></section>
 
+<section class="content5 cid-soOwJoLtdk" id="content5-9f">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                
+                <p class="mbr-text mbr-fonts-style display-7">For the serial connection between Arduino and Unity, we used an add-on called Ardity, which
+allows us to simplify the process of setting up the serial connections.
+When Unity received the signal value from the serial port. Unity will first parse the value inputted
+by dividing sent value by the ‘;’ mark and store those values into 4 different variables. Then it
+performs updates on the player's avatar game object’s transform position and rotation.<br></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="content5 cid-soOt6UpotS" id="content5-97">
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 col-lg-10">
+                
+                
+                <hr class="rounded">
+                <p class="mbr-text mbr-fonts-style display-7"><strong>Creation date: </strong>December, 2020<br><strong>My role in this project: </strong>Arduino programming, game design</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="progress-bars1 cid-soBCVtRcjS" id="progress-bars1-78">
     
     
@@ -307,7 +433,7 @@ border-radius: 10px;
                         <span>%</span>
                     </div>
                 </div>
-                <progress class="progress progress-primary" max="100" value="60">
+                <progress class="progress progress-primary" max="100" value="50">
                 </progress>
             </div>
             
@@ -346,7 +472,7 @@ border-radius: 10px;
                         <span>%</span>
                     </div>
                 </div>
-                <progress class="progress progress-primary" max="100" value="40">
+                <progress class="progress progress-primary" max="100" value="50">
                 </progress>
             </div>
             
