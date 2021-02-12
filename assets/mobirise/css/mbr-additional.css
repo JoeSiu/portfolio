@@ -6325,13 +6325,11 @@ a {
   justify-content: space-between;
   -webkit-justify-content: space-between;
 }
-.cid-sowNNyEDkp .progress1 .progressbar-number:before,
-.cid-sowNNyEDkp .progress2 .progressbar-number:before,
-.cid-sowNNyEDkp .progress3 .progressbar-number:before,
-.cid-sowNNyEDkp .progress4 .progressbar-number:before {
+.cid-sowNNyEDkp .progress1 .progressbar-number:before {
   position: absolute;
   right: 15px;
   top: 0;
+  content: '75';
 }
 .cid-sowNNyEDkp progress[value]::-webkit-progress-bar {
   background: rgba(206, 206, 206, 0.4);
@@ -6344,18 +6342,6 @@ a {
 }
 .cid-sowNNyEDkp progress::-ms-fill {
   background: #ffe161;
-}
-.cid-sowNNyEDkp .progress1 .progressbar-number:before {
-  content: '75';
-}
-.cid-sowNNyEDkp .progress2 .progressbar-number:before {
-  content: '80';
-}
-.cid-sowNNyEDkp .progress3 .progressbar-number:before {
-  content: '90';
-}
-.cid-sowNNyEDkp .progress4 .progressbar-number:before {
-  content: '100';
 }
 .cid-sowNNyEDkp .progress-primary {
   background: rgba(206, 206, 206, 0.4);
