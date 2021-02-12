@@ -43,12 +43,27 @@ pre[class*="language-"] {
 	background: #404040;
 	overflow-y: auto !important;
     overflow-x: auto !important;
-	max-height: 512px;
 	max-width: 50%;
-	min-width: 50%;
+	max-height: 25em;
 	margin-left: auto;
 	margin-right: auto;
 }
+
+/* For tablet size */
+@media only screen and (max-width: 992px) {
+	pre[class*="language-"] {
+		max-width: 85%;
+		max-height: 25em;
+	}
+  }
+  
+/* For mobile size */
+@media only screen and (max-width: 600px) { 
+	pre[class*="language-"] {
+		max-width: 95%;
+		max-height: 25em;
+	}
+  }
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
