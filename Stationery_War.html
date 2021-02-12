@@ -54,6 +54,9 @@ body {
  width: 10px;
  height: 10px;
 }
+::-webkit-scrollbar-corner { 
+background: rgba(0,0,0,0.5); 
+}
  ::-webkit-scrollbar-thumb {
 background: rgba(64, 64, 64, 0.75);
 border-radius: 10px;
@@ -166,52 +169,20 @@ border-radius: 10px;
 
 
 <!-- Place your own code below -->
-  <div class="row justify-content-center">
-        <pre class="line-numbers">                
-        <code class="language-clike">  
-                  // MPU 6050   ---&gt;   Arduino
-                  //
-                  //  VCC   -----&gt;   3.3v
-                  //  GND   -----&gt;   GND
-                  //  SCL   -----&gt;   A5 pin
-                  //  SDA   -----&gt;   A4 pin
-                  
-                  #include &lt;Wire.h&gt;
-                  const int MPU = 0x68; // I2C address of the MPU-6050
-                  int32_t AcX, AcY, AcZ, Tmp, GyX, GyY, GyZ, button;
-                  // value returned is in interval [-32768, 32767] so for normalize multiply GyX and others for gyro_normalizer_factor
-                  // float gyro_normalizer_factor = 1.0f / 32768.0f;
-                  
-                  int led1Pin = 0;
-                  int led2Pin = 1;
-                  int solenoid1Pin = 2;
-                  int solenoid2Pin = 3;
-                  int buttonPin = 7;
-                  int buttonInterval = 100;
-                  
-                  void setup()
-                  
-                  
-                  int checkButton()
-                  
-                      else
-                      
-                    }
-                  
-                    return buttonState;
-                  }
-                  
-                  void sentSensorData()
-                  
-                  
-                  void loop()
-                        
-               </code>
-             </pre>
-      </div>       
+ <div class="row justify-content-center">
+    <pre class="line-numbers">                
+      <code class="language-clike">  
+      asd
+      test 2(test 2-1)
+      test 3
+      '
+      asd
+      </code>
+    </pre>
+  <div>    
 <!-- Place your own code above -->
 
-</section>
+</div></div></section>
 
 <section class="progress-bars1 cid-soBCVtRcjS" id="progress-bars1-78">
     
