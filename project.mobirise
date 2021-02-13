@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Portfolio",
-    "currentPage": "Stationery_War.html",
+    "currentPage": "index.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -26,7 +26,7 @@
         "isRoundedButtons": true,
         "isGhostButtonBorder": false,
         "underlinedLinks": true,
-        "isAnimatedOnScroll": true,
+        "isAnimatedOnScroll": false,
         "isScrollToTopButton": false
       },
       "additionalSetColors": [
@@ -47,7 +47,7 @@
     "publishChangesOnly": true,
     "imageResize": false,
     "favicon": false,
-    "mbrsiteDomain": "guczcfn21p",
+    "mbrsiteDomain": "3tkmpxios1",
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
     "sitemapSwitcherAuto": false,
