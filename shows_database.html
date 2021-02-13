@@ -139,10 +139,10 @@ border-radius: 10px;
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-12 col-md-10 col-lg-12">
-                <div class="carousel slide carousel-fade" id="soP2ZQBWFw" data-interval="5000">
+                <div class="carousel slide carousel-fade" id="soRZX8lFOH" data-interval="5000">
                     
                     <ol class="carousel-indicators">
-                        <li data-slide-to="0" class="active" data-target="#soP2ZQBWFw"></li>
+                        <li data-slide-to="0" class="active" data-target="#soRZX8lFOH"></li>
                         
                         
                     </ol>
@@ -159,11 +159,11 @@ border-radius: 10px;
                             </div>
                         </div>
                     </div>
-                    <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#soP2ZQBWFw">
+                    <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#soRZX8lFOH">
                         <span class="mobi-mbri mobi-mbri-arrow-prev" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control carousel-control-next" role="button" data-slide="next" href="#soP2ZQBWFw">
+                    <a class="carousel-control carousel-control-next" role="button" data-slide="next" href="#soRZX8lFOH">
                         <span class="mobi-mbri mobi-mbri-arrow-next" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
@@ -200,276 +200,274 @@ border-radius: 10px;
       <code class="language-clike">  
 //for the first page, old
 function submitData() {
-  var ss        = SpreadsheetApp.getActiveSpreadsheet();
-  var formSS    = ss.getSheetByName("Homepage"); //Form Sheet
-  var datasheet = ss.getSheetByName("Overview"); //Data Sheet
-  
-  //Input Values
-  var values = [[formSS.getRange("B2").getValue(),
-                 formSS.getRange("B3").getValue(),
-                 formSS.getRange("B4").getValue(),
-                 formSS.getRange("B5").getValue(),
-                 formSS.getRange("B6").getValue(),
-                 formSS.getRange("B7").getValue(),
-                 formSS.getRange("B8").getValue(),
-                 formSS.getRange("B9").getValue(),
-                 formSS.getRange("B10").getValue(),
-                 formSS.getRange("B11").getValue(),
-                 formSS.getRange("B12").getValue()]];  
-  //~if added more column which is input, copy the above line and change the range
-  
-  var range = datasheet.getRange(datasheet.getLastRow()+1, 1, 1, 11);  //~if added more column, change the last value (number of columns)
-  
-  range.setValues(values);
-  
-  setBorder();
-  clearData();
-  sortRange(); 
-  setBorder();
-}
-
-function findMaxID() {
-  var ss        = SpreadsheetApp.getActiveSpreadsheet();
-  var datasheet = ss.getSheetByName("Overview"); //Data Sheet
-  var id        = datasheet.getRange(2, 1, datasheet.getLastRow()).getValues();
-  return Math.max.apply(Math, id);
-}
-
-function EditWatchOrder() { //not working
-  var ss        = SpreadsheetApp.getActiveSpreadsheet();
-  var datasheet = ss.getSheetByName("Overview"); //Data Sheet
-  var watchOrder= datasheet.getRange(2, 8, datasheet.getLastRow()).getValues();
-  var watchOrderList= datasheet.getRange(2, 8, datasheet.getLastRow());
-  var haveOne = false;
-  
-  while (haveOne == false) {
-    for (var i = 0; i&lt;watchOrder.length; i++){
-      if (watchOrder[i] ==1) {
-        haveOne = true;
-        break;
-      }
+    var ss        = SpreadsheetApp.getActiveSpreadsheet();
+    var formSS    = ss.getSheetByName("Homepage"); //Form Sheet
+    var datasheet = ss.getSheetByName("Overview"); //Data Sheet
+    
+    //Input Values
+    var input = [];
+    var inputCol = "B";
+    var inputRange = 13;
+    //get inputs, start from row 2
+    for (var i = 2; i &lt;inputRange; i++) {
+      var inputSlot = inputCol + i.toString();
+      input.push(formSS.getRange(inputSlot).getValue());
     }
-    if (haveOne == false) {
-      Browser.msgBox("1");
-      Browser.msgBox(watchOrderList);
+    //cast into 2d array as setValues only accept 2d array
+    var values = [input];
+    
+    var range = datasheet.getRange(datasheet.getLastRow()+1, 1, 1, 11);  //~if added more column, change the last value (number of columns)
+    
+    range.setValues(values);
+    
+    setBorder();
+    clearData();
+    sortRange(); 
+    setBorder();
+  }
+  
+  function findMaxID() {
+    var ss        = SpreadsheetApp.getActiveSpreadsheet();
+    var datasheet = ss.getSheetByName("Overview"); //Data Sheet
+    var id        = datasheet.getRange(2, 1, datasheet.getLastRow()).getValues();
+    return Math.max.apply(Math, id);
+  }
+  
+  function EditWatchOrder() { //not working
+    var ss        = SpreadsheetApp.getActiveSpreadsheet();
+    var datasheet = ss.getSheetByName("Overview"); //Data Sheet
+    var watchOrder= datasheet.getRange(2, 8, datasheet.getLastRow()).getValues();
+    var watchOrderList= datasheet.getRange(2, 8, datasheet.getLastRow());
+    var haveOne = false;
+    
+    while (haveOne == false) {
       for (var i = 0; i&lt;watchOrder.length; i++){
-        if (!watchOrderList[i].isBlank()) {
-        watchOrder[i]--;
+        if (watchOrder[i] ==1) {
+          haveOne = true;
+          break;
         }
       }
-      Browser.msgBox(watchOrder);
-    }
-    if (haveOne == false) {
-      Browser.msgBox("2");
-      watchOrderList.setValues(watchOrder);
-    }
-  }
-}
-
-function clearData() {
-  var sheet = SpreadsheetApp.getActive().getSheetByName('Homepage');
-  var rangesToClear = ['B2', "B3", "B4", "B5", "B6", "B7", "B8", "B9", "B10", "B11", "B12"];
-  var maxID = sheet.getRange("D2").getValue();
-  
-  for (var i = 0; i&lt;rangesToClear.length; i++) { 
-    sheet.getRange(rangesToClear[i]).clearContent();
-  }
-  
-  sheet.getRange('B2').setValue(findMaxID() + 1);
-  sheet.getRange('B3').setValue(false);
-  sheet.getRange('B4').setValue(false);
-  sheet.getRange('B5').setValue(false);
-  sheet.getRange('B7').setValue("[0] Header");
-  sheet.getRange('B8').setValue("-1");
-  sheet.getRange('B9').setValue("-1");
-  sheet.getRange('B10').setValue(" ");
-  sheet.getRange('B11').setValue("-1");
-  sheet.getRange('B12').setValue(false);
-}
-
-function sortRange() {
-  var ss        = SpreadsheetApp.getActiveSpreadsheet();
-  var datasheet = ss.getSheetByName("Overview"); //Data Sheet
-  
-  //sort by type then ID on the datasheet
-  var sortRange = datasheet.getRange(2, 1, datasheet.getLastRow() - 1, datasheet.getLastColumn());
-  sortRange.sort(5);
-  sortRange.sort(6);
-  sortRange.sort(1);
-}
-
-function setBorder() {
-  //script from: https://stackoverflow.com/questions/55943889/adding-borders-based-on-grouped-rows-and-conditional-formatting-in-google-sheets
-  var ss        = SpreadsheetApp.getActiveSpreadsheet();
-  var datasheet = ss.getSheetByName("Overview"); //Data Sheet
-  
-  //clear border
-  datasheet.getRange(1, 1, datasheet.getMaxRows(), datasheet.getMaxColumns()).setBorder(false, false, false, false, false, false);
-  
-  //get IDs, getRange(row, column...
-  var values = datasheet.getRange(2, 1, datasheet.getLastRow() - 1, 1).getValues();
-
-  //Check if current ID is same as next ID, if so, add it to rangeList
-  var rangeList = values.reduce(function(ar, e, i) {
-      if (i &gt; 0 &amp;&amp; values[i - 1][0] != e[0] &amp;&amp; e[0] != "") {
-        //range, from Ai+1:Ki+1
-        ar.push("A" + (i + 1) + ":M" + (i + 1));  //if added more column, change the ":x"
+      if (haveOne == false) {
+        Browser.msgBox("1");
+        Browser.msgBox(watchOrderList);
+        for (var i = 0; i&lt;watchOrder.length; i++){
+          if (!watchOrderList[i].isBlank()) {
+          watchOrder[i]--;
+          }
+        }
+        Browser.msgBox(watchOrder);
       }
-      return ar;
-    }, [])
+      if (haveOne == false) {
+        Browser.msgBox("2");
+        watchOrderList.setValues(watchOrder);
+      }
+    }
+  }
   
-  rangeList.push(datasheet.getRange(datasheet.getLastRow(), 1, 1, datasheet.getLastColumn()).getA1Notation());
+  function clearData() {
+    var sheet = SpreadsheetApp.getActive().getSheetByName('Homepage');
+    var rangesToClear = ['B2', "B3", "B4", "B5", "B6", "B7", "B8", "B9", "B10", "B11", "B12"];
+    var maxID = sheet.getRange("D2").getValue();
+    
+    for (var i = 0; i&lt;rangesToClear.length; i++) { 
+      sheet.getRange(rangesToClear[i]).clearContent();
+    }
+    
+    sheet.getRange('B2').setValue(findMaxID() + 1);
+    sheet.getRange('B3').setValue(false);
+    sheet.getRange('B4').setValue(false);
+    sheet.getRange('B5').setValue(false);
+    sheet.getRange('B7').setValue("[0] Header");
+    sheet.getRange('B8').setValue("-1");
+    sheet.getRange('B9').setValue("-1");
+    sheet.getRange('B10').setValue(" ");
+    sheet.getRange('B11').setValue("-1");
+    sheet.getRange('B12').setValue(false);
+  }
   
-  //set borders, setBorder(top, left, bottom, right, vertical, horizontal, color, style)
-  var color = 'dimgrey';
-  var style = 'SOLID';
-  datasheet.getRangeList(rangeList).setBorder(null, null, true, null, false, false, color, SpreadsheetApp.BorderStyle.style);
-  datasheet.getRange('A1:K1').setBorder(true, true, true, true, true, null, color, SpreadsheetApp.BorderStyle.style);  //~if added more column, change the range value~
-  datasheet.getRange('A2:A').setBorder(null, true, null, true, null, null, color, SpreadsheetApp.BorderStyle.style);
-  datasheet.getRange('D2:D').setBorder(null, null, null, true, null, null, color, SpreadsheetApp.BorderStyle.style);
-  datasheet.getRange('G2:G').setBorder(null, true, null, true, null, null, color, SpreadsheetApp.BorderStyle.style);
-  datasheet.getRange('H2:H').setBorder(null, true, null, true, null, null, color, SpreadsheetApp.BorderStyle.style);  
-  datasheet.getRange('J2:J').setBorder(null, true, null, true, null, null, color, SpreadsheetApp.BorderStyle.style);
-  datasheet.getRange('K2:K').setBorder(null, true, null, true, null, null, color, SpreadsheetApp.BorderStyle.style);
-  datasheet.getRange('L2:L').setBorder(null, true, null, true, null, null, color, SpreadsheetApp.BorderStyle.style);
-  datasheet.getRange('M2:M').setBorder(null, true, null, true, null, null, color, SpreadsheetApp.BorderStyle.style);
-  //if added more column, copy above line and change range
-}
-
-function SortAndSetBorderButton() {
-  removeEmptyRowsAndColumns();
-  sortRange();
-  setBorder();
-  //EditWatchOrder();
-}
-
-//reorder the ID to make it continuous
-function setID() {
-  var ss        = SpreadsheetApp.getActiveSpreadsheet();
-  var datasheet = ss.getSheetByName("Overview");
-  var cells = datasheet.getRange(2, 1, datasheet.getLastRow()-1, 1).getValues();
+  function sortRange() {
+    var ss        = SpreadsheetApp.getActiveSpreadsheet();
+    var datasheet = ss.getSheetByName("Overview"); //Data Sheet
+    
+    //sort by type then ID on the datasheet
+    var sortRange = datasheet.getRange(2, 1, datasheet.getLastRow() - 1, datasheet.getLastColumn());
+    sortRange.sort(5);
+    sortRange.sort(6);
+    sortRange.sort(1);
+  }
   
-  sortRange();
-  SpreadsheetApp.flush();
+  function setBorder() {
+    //script from: https://stackoverflow.com/questions/55943889/adding-borders-based-on-grouped-rows-and-conditional-formatting-in-google-sheets
+    var ss        = SpreadsheetApp.getActiveSpreadsheet();
+    var datasheet = ss.getSheetByName("Overview"); //Data Sheet
+    
+    //clear border
+    datasheet.getRange(1, 1, datasheet.getMaxRows(), datasheet.getMaxColumns()).setBorder(false, false, false, false, false, false);
+    
+    //get IDs, getRange(row, column...
+    var values = datasheet.getRange(2, 1, datasheet.getLastRow() - 1, 1).getValues();
   
-   for (var i = 1; i &lt; cells.length-1; i++) { 
-     var previous = cells[i-1][0];
-     var current = cells[i][0];
-     if (previous != '' &amp;&amp; current != '') {
-       var interval = current - previous;
-       
-       if (interval &gt; 0) {
-         interval--;
+    //Check if current ID is same as next ID, if so, add it to rangeList
+    var rangeList = values.reduce(function(ar, e, i) {
+        if (i &gt; 0 &amp;&amp; values[i - 1][0] != e[0] &amp;&amp; e[0] != "") {
+          //range, from Ai+1:Ki+1
+          ar.push("A" + (i + 1) + ":M" + (i + 1));  //if added more column, change the ":x"
+        }
+        return ar;
+      }, [])
+    
+    rangeList.push(datasheet.getRange(datasheet.getLastRow(), 1, 1, datasheet.getLastColumn()).getA1Notation());
+    
+    //set borders, setBorder(top, left, bottom, right, vertical, horizontal, color, style)
+    var color = 'dimgrey';
+    var style = 'SOLID';
+    datasheet.getRangeList(rangeList).setBorder(null, null, true, null, false, false, color, SpreadsheetApp.BorderStyle.style);
+    datasheet.getRange('A1:K1').setBorder(true, true, true, true, true, null, color, SpreadsheetApp.BorderStyle.style);  //~if added more column, change the range value~
+    datasheet.getRange('A2:A').setBorder(null, true, null, true, null, null, color, SpreadsheetApp.BorderStyle.style);
+    datasheet.getRange('D2:D').setBorder(null, null, null, true, null, null, color, SpreadsheetApp.BorderStyle.style);
+    datasheet.getRange('G2:G').setBorder(null, true, null, true, null, null, color, SpreadsheetApp.BorderStyle.style);
+    datasheet.getRange('H2:H').setBorder(null, true, null, true, null, null, color, SpreadsheetApp.BorderStyle.style);  
+    datasheet.getRange('J2:J').setBorder(null, true, null, true, null, null, color, SpreadsheetApp.BorderStyle.style);
+    datasheet.getRange('K2:K').setBorder(null, true, null, true, null, null, color, SpreadsheetApp.BorderStyle.style);
+    datasheet.getRange('L2:L').setBorder(null, true, null, true, null, null, color, SpreadsheetApp.BorderStyle.style);
+    datasheet.getRange('M2:M').setBorder(null, true, null, true, null, null, color, SpreadsheetApp.BorderStyle.style);
+    //if added more column, copy above line and change range
+  }
+  
+  function SortAndSetBorderButton() {
+    removeEmptyRowsAndColumns();
+    sortRange();
+    setBorder();
+    //EditWatchOrder();
+  }
+  
+  //reorder the ID to make it continuous
+  function setID() {
+    var ss        = SpreadsheetApp.getActiveSpreadsheet();
+    var datasheet = ss.getSheetByName("Overview");
+    var cells = datasheet.getRange(2, 1, datasheet.getLastRow()-1, 1).getValues();
+    
+    sortRange();
+    SpreadsheetApp.flush();
+    
+     for (var i = 1; i &lt; cells.length-1; i++) { 
+       var previous = cells[i-1][0];
+       var current = cells[i][0];
+       if (previous != '' &amp;&amp; current != '') {
+         var interval = current - previous;
+         
+         if (interval &gt; 0) {
+           interval--;
+         }
+         
+         while(cells[i][0] == current &amp;&amp; i &lt; cells.length-1) {
+           cells[i][0] = (current - interval);
+           i++;
+         } 
+         i--;
        }
+     }
+    
+     var previous = cells[cells.length-2][0];
+     var current = cells[cells.length-1][0];
+     var interval = current - previous;
        
-       while(cells[i][0] == current &amp;&amp; i &lt; cells.length-1) {
-         cells[i][0] = (current - interval);
-         i++;
-       } 
-       i--;
+     if (interval &gt; 0) {
+       interval--;
      }
-   }
+    cells[cells.length-1][0] = (current - interval);
+    
+    datasheet.getRange(2, 1,  cells.length, 1).setValues(cells);
+  }
   
-   var previous = cells[cells.length-2][0];
-   var current = cells[cells.length-1][0];
-   var interval = current - previous;
-     
-   if (interval &gt; 0) {
-     interval--;
-   }
-  cells[cells.length-1][0] = (current - interval);
+  //set the wiki field to importXML if it dont havbe, else set the result as text
+  function searchWiki() {
+    var ss        = SpreadsheetApp.getActiveSpreadsheet();
+    var datasheet = ss.getSheetByName("Overview");
+    var cells = datasheet.getRange(2, 13, datasheet.getLastRow()-1).getValues(); //get row 2, column 13's data
+   
+     for (var i = 0; i&lt;cells.length; i++) { 
+       //if cell is empty or is error
+       if (cells[i] == "" || cells[i] == "#ERROR!") {
+         datasheet.getRange(i+2,13).setFormula("=CONCATENATE(\"https://zh.wikipedia.org\",IFNA(index(importxml(\"https://zh.wikipedia.org/w/index.php?search=\"" + "&amp;$E" + (i+2) + ",\"//div[@id='mw-content-text']/div[@class='searchresults mw-searchresults-has-iw']/ul[@class='mw-search-results']//a/@href\"),1,1)," + "CONCATENATE(\"/w/index.php?search=\"," + "$E" + (i+2) + ")))"); 
+         //SpreadsheetApp.flush();
+         Logger.log('Row ' + (i+2) + ' have been added the formula');  
+       }   
+       //if the cell contains a formula
+       else if (datasheet.getRange(2+i,13).getFormula()) {
+         //get the value from the formula and set the value to the cell
+         var val = datasheet.getRange(i+2,13).getValue();
+         datasheet.getRange(i+2,13).setValue(val);
+         //SpreadsheetApp.flush();
+         Logger.log('Row ' + (i+2) + ' have been set');  
+       }
+    }
+  }     
   
-  datasheet.getRange(2, 1,  cells.length, 1).setValues(cells);
-}
-
-//set the wiki field to importXML if it dont havbe, else set the result as text
-function searchWiki() {
-  var ss        = SpreadsheetApp.getActiveSpreadsheet();
-  var datasheet = ss.getSheetByName("Overview");
-  var cells = datasheet.getRange(2, 13, datasheet.getLastRow()-1).getValues(); //get row 2, column 13's data
- 
-   for (var i = 0; i&lt;cells.length; i++) { 
-     //if cell is empty or is error
-     if (cells[i] == "" || cells[i] == "#ERROR!") {
-       datasheet.getRange(i+2,13).setFormula("=CONCATENATE(\"https://zh.wikipedia.org\",IFNA(index(importxml(\"https://zh.wikipedia.org/w/index.php?search=\"" + "&amp;$E" + (i+2) + ",\"//div[@id='mw-content-text']/div[@class='searchresults mw-searchresults-has-iw']/ul[@class='mw-search-results']//a/@href\"),1,1)," + "CONCATENATE(\"/w/index.php?search=\"," + "$E" + (i+2) + ")))"); 
-       //SpreadsheetApp.flush();
-       Logger.log('Row ' + (i+2) + ' have been added the formula');  
-     }   
-     //if the cell contains a formula
-     else if (datasheet.getRange(2+i,13).getFormula()) {
-       //get the value from the formula and set the value to the cell
-       var val = datasheet.getRange(i+2,13).getValue();
-       datasheet.getRange(i+2,13).setValue(val);
-       //SpreadsheetApp.flush();
-       Logger.log('Row ' + (i+2) + ' have been set');  
-     }
-  }
-}     
-
-//Remove All Rows in Overview which the title is empty
-function removeRowsWithNoTitle() {
-  var ss        = SpreadsheetApp.getActiveSpreadsheet();
-  var datasheet = ss.getSheetByName("Overview");
-  var rows = datasheet.getDataRange();
-  var numRows = rows.getNumRows();
-  var values = rows.getValues();
-
-  var rowsDeleted = 0;
-  for (var i = 0; i &lt;= numRows - 1; i++) {
-    var row = values[i];
-    if (row[4] == '') { //title is at row 5, array start at 0, so 4
-      datasheet.deleteRow((parseInt(i)+1) - rowsDeleted);
-      rowsDeleted++;
+  //Remove All Rows in Overview which the title is empty
+  function removeRowsWithNoTitle() {
+    var ss        = SpreadsheetApp.getActiveSpreadsheet();
+    var datasheet = ss.getSheetByName("Overview");
+    var rows = datasheet.getDataRange();
+    var numRows = rows.getNumRows();
+    var values = rows.getValues();
+  
+    var rowsDeleted = 0;
+    for (var i = 0; i &lt;= numRows - 1; i++) {
+      var row = values[i];
+      if (row[4] == '') { //title is at row 5, array start at 0, so 4
+        datasheet.deleteRow((parseInt(i)+1) - rowsDeleted);
+        rowsDeleted++;
+      }
     }
   }
-};
-
-//Remove All Empty Rows in the Entire Workbook
-function removeEmptyRows() {
-  var ss = SpreadsheetApp.getActive();
-  var allsheets = ss.getSheets();
-  for (var s in allsheets){
-    var sheet=allsheets[s]
-    var maxRows = sheet.getMaxRows(); 
-    var lastRow = sheet.getLastRow();
-    if (maxRows-lastRow != 0){
-      sheet.deleteRows(lastRow+1, maxRows-lastRow);
+  
+  //Remove All Empty Rows in the Entire Workbook
+  function removeEmptyRows() {
+    var ss = SpreadsheetApp.getActive();
+    var allsheets = ss.getSheets();
+    for (var s in allsheets){
+      var sheet=allsheets[s]
+      var maxRows = sheet.getMaxRows(); 
+      var lastRow = sheet.getLastRow();
+      if (maxRows-lastRow != 0){
+        sheet.deleteRows(lastRow+1, maxRows-lastRow);
+      }
     }
   }
-}
-
-//Remove All Empty Columns in the Entire Workbook
-function removeEmptyColumns() {
-  var ss = SpreadsheetApp.getActive();
-  var allsheets = ss.getSheets();
-  for (var s in allsheets){
-    var sheet=allsheets[s]
-    var maxColumns = sheet.getMaxColumns(); 
-    var lastColumn = sheet.getLastColumn();
-    if (maxColumns-lastColumn != 0){
-      sheet.deleteColumns(lastColumn+1, maxColumns-lastColumn);
+  
+  //Remove All Empty Columns in the Entire Workbook
+  function removeEmptyColumns() {
+    var ss = SpreadsheetApp.getActive();
+    var allsheets = ss.getSheets();
+    for (var s in allsheets){
+      var sheet=allsheets[s]
+      var maxColumns = sheet.getMaxColumns(); 
+      var lastColumn = sheet.getLastColumn();
+      if (maxColumns-lastColumn != 0){
+        sheet.deleteColumns(lastColumn+1, maxColumns-lastColumn);
+      }
     }
   }
-}
-
-function removeEmptyRowsAndColumns() {
-  removeEmptyRows();
-  removeEmptyColumns();
-}
-
-function timedActions() {
-  removeRowsWithNoTitle();
-  setID();
-  searchWiki();
-}
-
-function onChangeActions() {  
-  //removeRowsWithNoTitle();
-  //sortRange();
-  //setID();
-  //searchWiki();
-  //setBorder();
-}
+  
+  function removeEmptyRowsAndColumns() {
+    removeEmptyRows();
+    removeEmptyColumns();
+  }
+  
+  function timedActions() {
+    removeRowsWithNoTitle();
+    setID();
+    searchWiki();
+  }
+  
+  function onChangeActions() {  
+    //removeRowsWithNoTitle();
+    //sortRange();
+    //setID();
+    //searchWiki();
+    //setBorder();
+  }
       </code>
     </pre>
   <div>    

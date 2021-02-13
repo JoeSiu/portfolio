@@ -169,7 +169,7 @@ and with this project, we want to bring back our child memory and combine it wit
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-10">
                 
-                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5"><strong>Hardware:&nbsp;</strong></h4>
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5"><strong>Hardware</strong></h4>
                 <p class="mbr-text mbr-fonts-style display-7">For the base design of the controller, we attached a ruler and the breadboard on top of a highlighter, which looks like the airplane we built as a child using stationeries, while 2 solenoids are attached to the bottom of the ruler which looks like 2 machine guns of the plane.<br></p>
             </div>
         </div>
@@ -183,10 +183,10 @@ and with this project, we want to bring back our child memory and combine it wit
     <div class="container-fluid">
         <div class="row justify-content-center">
             <div class="col-12 col-md-10 col-lg-12">
-                <div class="carousel slide carousel-fade" id="soP2Zyrih5" data-interval="5000">
+                <div class="carousel slide carousel-fade" id="soRZWR2hJD" data-interval="5000">
                     
                     <ol class="carousel-indicators">
-                        <li data-slide-to="0" class="active" data-target="#soP2Zyrih5"></li><li data-slide-to="1" class="active" data-target="#soP2Zyrih5"></li>
+                        <li data-slide-to="0" class="active" data-target="#soRZWR2hJD"></li><li data-slide-to="1" class="active" data-target="#soRZWR2hJD"></li>
                         
                         
                     </ol>
@@ -211,11 +211,11 @@ and with this project, we want to bring back our child memory and combine it wit
                         
                         
                     </div>
-                    <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#soP2Zyrih5">
+                    <a class="carousel-control carousel-control-prev" role="button" data-slide="prev" href="#soRZWR2hJD">
                         <span class="mobi-mbri mobi-mbri-arrow-prev" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control carousel-control-next" role="button" data-slide="next" href="#soP2Zyrih5">
+                    <a class="carousel-control carousel-control-next" role="button" data-slide="next" href="#soRZWR2hJD">
                         <span class="mobi-mbri mobi-mbri-arrow-next" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
@@ -231,7 +231,7 @@ and with this project, we want to bring back our child memory and combine it wit
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-10">
                 
-                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5"><strong>Software:&nbsp;</strong></h4>
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5"><strong>Software&nbsp;</strong></h4>
                 <p class="mbr-text mbr-fonts-style display-7">The game is built in Unity3D using version 2019.4.14f1. It is an 3d infinite-level game, which&nbsp;requires the player to control the spaceship to destroy in-coming enemy planes and avoid
 architecture at the same time. To control the movement of the spaceship, rotate the plane-like
 controller to do vertical and horizontal movement. Push the button to fire bullets to attack enemy
@@ -247,7 +247,7 @@ planes.<br></p>
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-10">
                 
-                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5"><strong>Connections between Arduino&nbsp;and Unity:&nbsp;</strong></h4>
+                <h4 class="mbr-section-subtitle mbr-fonts-style mb-4 display-5"><strong>Connections between Arduino&nbsp;and Unity&nbsp;</strong></h4>
                 <p class="mbr-text mbr-fonts-style display-7">In Arduino, there is a function called sentSensorData(), and it will send 4 values, which are
 separated by a ; mark. The first 3 values will be the xyz rotation of the accelerometer and the
 last value will be a 0/1 boolean value to indicate whether the button is pressed or not. Arduino
@@ -267,110 +267,110 @@ prints the value in the serial monitor and sends it to unity. The source code fo
  <div class="content">
     <pre class="line-numbers">                
       <code class="language-clike">  
- // MPU 6050   ---&gt;   Arduino
-        //
-        //  VCC   -----&gt;   3.3v
-        //  GND   -----&gt;   GND
-        //  SCL   -----&gt;   A5 pin
-        //  SDA   -----&gt;   A4 pin
-        
-        #include &lt;Wire.h&gt;
-        const int MPU = 0x68; // I2C address of the MPU-6050
-        int32_t AcX, AcY, AcZ, Tmp, GyX, GyY, GyZ, button;
-        // value returned is in interval [-32768, 32767] so for normalize multiply GyX and others for gyro_normalizer_factor
-        // float gyro_normalizer_factor = 1.0f / 32768.0f;
-        
-        int led1Pin = 0;
-        int led2Pin = 1;
-        int solenoid1Pin = 2;
-        int solenoid2Pin = 3;
-        int buttonPin = 7;
-        int buttonInterval = 100;
-        
-        void setup()
-        {      
-          pinMode(led1Pin, OUTPUT);
-          pinMode(led2Pin, OUTPUT);
-          pinMode(solenoid1Pin, OUTPUT);
-          pinMode(solenoid2Pin, OUTPUT);
-          pinMode(buttonPin, INPUT);
-        
-          Wire.begin();
-          Wire.beginTransmission(MPU);
-          Wire.write(0x6B); // PWR_MGMT_1 register
-          Wire.write(0);    // set to zero (wakes up the MPU-6050)
-          Wire.endTransmission(true);
-        
-          Serial.begin(57600);
-          Serial.flush();
-        }
-        
-        int checkButton()
-        {
-          unsigned long currentMillis = millis();
-          static unsigned long previousMillis = 0;
-          int buttonState = digitalRead(buttonPin);
-          int currentState = digitalRead(solenoid1Pin);
-        
-          if (currentMillis - previousMillis &gt;= buttonInterval &amp;&amp; buttonState == HIGH)
-          {
-            previousMillis = currentMillis;
-            if (currentState == LOW)
-            {
-              digitalWrite(led1Pin, HIGH);
-              digitalWrite(led2Pin, HIGH);
-              digitalWrite(solenoid1Pin, HIGH);
-              digitalWrite(solenoid2Pin, HIGH);
-            }
-            else
-            {
-              digitalWrite(led1Pin, LOW);
-              digitalWrite(led2Pin, LOW);
-              digitalWrite(solenoid1Pin, LOW);
-              digitalWrite(solenoid2Pin, LOW);
-            }
-          }
-        
-          return buttonState;
-        }
-        
-        void sentSensorData()
-        {
-          //read MPU450's accelerometer and sent it to serial port
-          Wire.beginTransmission(MPU);
-          Wire.write(0x3B); // starting with register 0x3B (ACCEL_XOUT_H)
-          Wire.endTransmission(false);
-          Wire.requestFrom(MPU, 14, true); // request a total of 14 registers
-        
-          //accelerometer
-          AcX = Wire.read() &lt;&lt; 8 | Wire.read(); // 0x3B (ACCEL_XOUT_H) &amp; 0x3C (ACCEL_XOUT_L)
-          AcY = Wire.read() &lt;&lt; 8 | Wire.read(); // 0x3D (ACCEL_YOUT_H) &amp; 0x3E (ACCEL_YOUT_L)
-          AcZ = Wire.read() &lt;&lt; 8 | Wire.read(); // 0x3F (ACCEL_ZOUT_H) &amp; 0x40 (ACCEL_ZOUT_L)
-          button = checkButton();
-          Serial.print(AcX);
-          Serial.print(";");
-          Serial.print(AcY);
-          Serial.print(";");
-          Serial.print(AcZ);
-          Serial.print(";");
-          Serial.print(button);
-          Serial.println(";");
-          //Serial.print(int16_t(5)); Serial.print(";"); Serial.print(int16_t(10)); Serial.print(";"); Serial.print(int16_t(15)); Serial.println(""); //temp
-        
-          //gyroscope
-          //Tmp=Wire.read()&lt;&lt;8|Wire.read();  // 0x41 (TEMP_OUT_H) &amp; 0x42 (TEMP_OUT_L)
-          //GyX=Wire.read()&lt;&lt;8|Wire.read();  // 0x43 (GYRO_XOUT_H) &amp; 0x44 (GYRO_XOUT_L)
-          //GyY=Wire.read()&lt;&lt;8|Wire.read();  // 0x45 (GYRO_YOUT_H) &amp; 0x46 (GYRO_YOUT_L)
-          //GyZ=Wire.read()&lt;&lt;8|Wire.read();  // 0x47 (GYRO_ZOUT_H) &amp; 0x48 (GYRO_ZOUT_L)
-          //Serial.print(GyX); Serial.print(";"); Serial.print(GyY); Serial.print(";"); Serial.print(GyZ); Serial.println("");
-        }
-        
-        void loop()
-        {
-            sentSensorData();
-            Serial.flush();
-            delay(20);
-        }     
+// MPU 6050   ---&gt;   Arduino
+//
+//  VCC   -----&gt;   3.3v
+//  GND   -----&gt;   GND
+//  SCL   -----&gt;   A5 pin
+//  SDA   -----&gt;   A4 pin
+
+#include &lt;Wire.h&gt;
+const int MPU = 0x68; // I2C address of the MPU-6050
+int32_t AcX, AcY, AcZ, Tmp, GyX, GyY, GyZ, button;
+// value returned is in interval [-32768, 32767] so for normalize multiply GyX and others for gyro_normalizer_factor
+// float gyro_normalizer_factor = 1.0f / 32768.0f;
+
+int led1Pin = 0;
+int led2Pin = 1;
+int solenoid1Pin = 2;
+int solenoid2Pin = 3;
+int buttonPin = 7;
+int buttonInterval = 100;
+
+void setup()
+{
+  pinMode(led1Pin, OUTPUT);
+  pinMode(led2Pin, OUTPUT);
+  pinMode(solenoid1Pin, OUTPUT);
+  pinMode(solenoid2Pin, OUTPUT);
+  pinMode(buttonPin, INPUT);
+
+  Wire.begin();
+  Wire.beginTransmission(MPU);
+  Wire.write(0x6B); // PWR_MGMT_1 register
+  Wire.write(0);    // set to zero (wakes up the MPU-6050)
+  Wire.endTransmission(true);
+
+  Serial.begin(57600);
+  Serial.flush();
+}
+
+int checkButton()
+{
+  unsigned long currentMillis = millis();
+  static unsigned long previousMillis = 0;
+  int buttonState = digitalRead(buttonPin);
+  int currentState = digitalRead(solenoid1Pin);
+
+  if (currentMillis - previousMillis &gt;= buttonInterval &amp;&amp; buttonState == HIGH)
+  {
+    previousMillis = currentMillis;
+    if (currentState == LOW)
+    {
+      digitalWrite(led1Pin, HIGH);
+      digitalWrite(led2Pin, HIGH);
+      digitalWrite(solenoid1Pin, HIGH);
+      digitalWrite(solenoid2Pin, HIGH);
+    }
+    else
+    {
+      digitalWrite(led1Pin, LOW);
+      digitalWrite(led2Pin, LOW);
+      digitalWrite(solenoid1Pin, LOW);
+      digitalWrite(solenoid2Pin, LOW);
+    }
+  }
+
+  return buttonState;
+}
+
+void sentSensorData()
+{
+  //read MPU450's accelerometer and sent it to serial port
+  Wire.beginTransmission(MPU);
+  Wire.write(0x3B); // starting with register 0x3B (ACCEL_XOUT_H)
+  Wire.endTransmission(false);
+  Wire.requestFrom(MPU, 14, true); // request a total of 14 registers
+
+  //accelerometer
+  AcX = Wire.read() &lt;&lt; 8 | Wire.read(); // 0x3B (ACCEL_XOUT_H) &amp; 0x3C (ACCEL_XOUT_L)
+  AcY = Wire.read() &lt;&lt; 8 | Wire.read(); // 0x3D (ACCEL_YOUT_H) &amp; 0x3E (ACCEL_YOUT_L)
+  AcZ = Wire.read() &lt;&lt; 8 | Wire.read(); // 0x3F (ACCEL_ZOUT_H) &amp; 0x40 (ACCEL_ZOUT_L)
+  button = checkButton();
+  Serial.print(AcX);
+  Serial.print(";");
+  Serial.print(AcY);
+  Serial.print(";");
+  Serial.print(AcZ);
+  Serial.print(";");
+  Serial.print(button);
+  Serial.println(";");
+  //Serial.print(int16_t(5)); Serial.print(";"); Serial.print(int16_t(10)); Serial.print(";"); Serial.print(int16_t(15)); Serial.println(""); //temp
+
+  //gyroscope
+  //Tmp=Wire.read()&lt;&lt;8|Wire.read();  // 0x41 (TEMP_OUT_H) &amp; 0x42 (TEMP_OUT_L)
+  //GyX=Wire.read()&lt;&lt;8|Wire.read();  // 0x43 (GYRO_XOUT_H) &amp; 0x44 (GYRO_XOUT_L)
+  //GyY=Wire.read()&lt;&lt;8|Wire.read();  // 0x45 (GYRO_YOUT_H) &amp; 0x46 (GYRO_YOUT_L)
+  //GyZ=Wire.read()&lt;&lt;8|Wire.read();  // 0x47 (GYRO_ZOUT_H) &amp; 0x48 (GYRO_ZOUT_L)
+  //Serial.print(GyX); Serial.print(";"); Serial.print(GyY); Serial.print(";"); Serial.print(GyZ); Serial.println("");
+}
+
+void loop()
+{
+    sentSensorData();
+    Serial.flush();
+    delay(20);
+  } 
       </code>
     </pre>
     </div> 
