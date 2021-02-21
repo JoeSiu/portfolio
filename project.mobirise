@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Portfolio",
-    "currentPage": "index.html",
+    "currentPage": "404.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -54,7 +54,7 @@
     "siteUrl": "https://joesiu.github.io/portfolio/",
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 353,
+    "uniqCompNum": 354,
     "versionPublish": "5.2.8",
     "screenshot": "screenshot.png",
     "witsec-white-label": true,
@@ -6780,9 +6780,9 @@
     },
     "about_me.html": {
       "settings": {
-        "title": "About me / contact",
+        "title": "About me & contact",
         "order": 4,
-        "meta_descr": "Joe Siu's about me / contact page"
+        "meta_descr": "Joe Siu's about me & contact page"
       },
       "components": [
         {
