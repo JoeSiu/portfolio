@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Portfolio",
-    "currentPage": "index.html",
+    "currentPage": "8-Puzzle_Solver.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -18634,7 +18634,7 @@
         }
       ]
     },
-    "page18.html": {
+    "8-Puzzle_Solver.html": {
       "settings": {
         "title": "8-Puzzle Solver using A* Algorithm",
         "order": 18,
