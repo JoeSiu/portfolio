@@ -17320,7 +17320,7 @@ a {
   background: #ffe161;
 }
 .cid-swE9380dou .progress1 .progressbar-number:before {
-  content: '100';
+  content: '95';
 }
 .cid-swE9380dou .progress2 .progressbar-number:before {
   content: '80';
@@ -17351,6 +17351,90 @@ a {
 }
 .cid-swE9380dou .progressbar-title p,
 .cid-swE9380dou .progress_value {
+  color: #ffffff;
+}
+.cid-syMErjfJms {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #000000;
+}
+.cid-syMErjfJms .progress {
+  width: 100%;
+}
+.cid-syMErjfJms progress {
+  height: 8px;
+}
+.cid-syMErjfJms h3 {
+  text-align: center;
+  font-weight: 300;
+}
+.cid-syMErjfJms .mbr-section-subtitle {
+  color: #ffffff;
+  text-align: left;
+}
+.cid-syMErjfJms .progress_value {
+  position: relative;
+}
+.cid-syMErjfJms .progress_elements {
+  margin: 0 auto;
+}
+.cid-syMErjfJms .title-wrap {
+  display: flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+.cid-syMErjfJms .progress1 .progressbar-number:before,
+.cid-syMErjfJms .progress2 .progressbar-number:before,
+.cid-syMErjfJms .progress3 .progressbar-number:before,
+.cid-syMErjfJms .progress4 .progressbar-number:before {
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+.cid-syMErjfJms progress[value]::-webkit-progress-bar {
+  background: rgba(206, 206, 206, 0.4);
+}
+.cid-syMErjfJms progress::-webkit-progress-value {
+  background: #ffe161;
+}
+.cid-syMErjfJms progress[value]::-moz-progress-bar {
+  background: #ffe161;
+}
+.cid-syMErjfJms progress::-ms-fill {
+  background: #ffe161;
+}
+.cid-syMErjfJms .progress1 .progressbar-number:before {
+  content: '5';
+}
+.cid-syMErjfJms .progress2 .progressbar-number:before {
+  content: '80';
+}
+.cid-syMErjfJms .progress3 .progressbar-number:before {
+  content: '90';
+}
+.cid-syMErjfJms .progress4 .progressbar-number:before {
+  content: '100';
+}
+.cid-syMErjfJms .progress-primary {
+  background: rgba(206, 206, 206, 0.4);
+  border: none;
+  outline: none;
+}
+.cid-syMErjfJms .progress-primary::-webkit-progress-bar {
+  background: rgba(206, 206, 206, 0.4);
+}
+.cid-syMErjfJms .progress_value span {
+  padding-left: 30px;
+}
+.cid-syMErjfJms .progressbar-number {
+  word-break: normal;
+}
+.cid-syMErjfJms .mbr-section-title {
+  color: #ffe161;
+  text-align: left;
+}
+.cid-syMErjfJms .progressbar-title p,
+.cid-syMErjfJms .progress_value {
   color: #ffffff;
 }
 .cid-swE938A8tk #loading-center {
