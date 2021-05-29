@@ -5763,7 +5763,7 @@ a {
   background: #ffe161;
 }
 .cid-soww7D690n .progress1 .progressbar-number:before {
-  content: '60';
+  content: '50';
 }
 .cid-soww7D690n .progress2 .progressbar-number:before {
   content: '80';
@@ -5846,7 +5846,7 @@ a {
   background: #ffe161;
 }
 .cid-sowOupktqQ .progress1 .progressbar-number:before {
-  content: '55';
+  content: '50';
 }
 .cid-sowOupktqQ .progress2 .progressbar-number:before {
   content: '80';
@@ -6012,7 +6012,7 @@ a {
   background: #ffe161;
 }
 .cid-sowOvMZ7At .progress1 .progressbar-number:before {
-  content: '15';
+  content: '10';
 }
 .cid-sowOvMZ7At .progress2 .progressbar-number:before {
   content: '80';
@@ -6263,7 +6263,7 @@ a {
   background: #ffe161;
 }
 .cid-sowBFdtYpr .progress1 .progressbar-number:before {
-  content: '70';
+  content: '65';
 }
 .cid-sowBFdtYpr .progress2 .progressbar-number:before {
   content: '80';
@@ -6778,6 +6778,89 @@ a {
 }
 .cid-sowOgCGx8L .progressbar-title p,
 .cid-sowOgCGx8L .progress_value {
+  color: #ffffff;
+}
+.cid-syMF38kPEJ {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: #000000;
+}
+.cid-syMF38kPEJ .progress {
+  width: 100%;
+}
+.cid-syMF38kPEJ progress {
+  height: 8px;
+}
+.cid-syMF38kPEJ h3 {
+  text-align: center;
+  font-weight: 300;
+}
+.cid-syMF38kPEJ .mbr-section-subtitle {
+  color: #ffffff;
+}
+.cid-syMF38kPEJ .progress_value {
+  position: relative;
+}
+.cid-syMF38kPEJ .progress_elements {
+  margin: 0 auto;
+}
+.cid-syMF38kPEJ .title-wrap {
+  display: flex;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+.cid-syMF38kPEJ .progress1 .progressbar-number:before,
+.cid-syMF38kPEJ .progress2 .progressbar-number:before,
+.cid-syMF38kPEJ .progress3 .progressbar-number:before,
+.cid-syMF38kPEJ .progress4 .progressbar-number:before {
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+.cid-syMF38kPEJ progress[value]::-webkit-progress-bar {
+  background: rgba(206, 206, 206, 0.4);
+}
+.cid-syMF38kPEJ progress::-webkit-progress-value {
+  background: #ffe161;
+}
+.cid-syMF38kPEJ progress[value]::-moz-progress-bar {
+  background: #ffe161;
+}
+.cid-syMF38kPEJ progress::-ms-fill {
+  background: #ffe161;
+}
+.cid-syMF38kPEJ .progress1 .progressbar-number:before {
+  content: '10';
+}
+.cid-syMF38kPEJ .progress2 .progressbar-number:before {
+  content: '80';
+}
+.cid-syMF38kPEJ .progress3 .progressbar-number:before {
+  content: '90';
+}
+.cid-syMF38kPEJ .progress4 .progressbar-number:before {
+  content: '100';
+}
+.cid-syMF38kPEJ .progress-primary {
+  background: rgba(206, 206, 206, 0.4);
+  border: none;
+  outline: none;
+}
+.cid-syMF38kPEJ .progress-primary::-webkit-progress-bar {
+  background: rgba(206, 206, 206, 0.4);
+}
+.cid-syMF38kPEJ .progress_value span {
+  padding-left: 30px;
+}
+.cid-syMF38kPEJ .progressbar-number {
+  word-break: normal;
+}
+.cid-syMF38kPEJ .mbr-section-title {
+  color: #ffffff;
+  text-align: left;
+}
+.cid-syMF38kPEJ .progressbar-title p,
+.cid-syMF38kPEJ .progress_value {
   color: #ffffff;
 }
 .cid-soxgkgT4tb {
