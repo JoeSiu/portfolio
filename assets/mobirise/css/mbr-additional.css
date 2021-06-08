@@ -1810,6 +1810,25 @@ a {
 .cid-snlIFhaZo3 .mbr-description {
   color: #bbbbbb;
 }
+.cid-szKH1sJXiu {
+  padding-top: 0rem;
+  padding-bottom: 3rem;
+  background-color: #000000;
+}
+@media (max-width: 991px) {
+  .cid-szKH1sJXiu .image-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+.cid-szKH1sJXiu .row {
+  flex-direction: row-reverse;
+}
+.cid-szKH1sJXiu img {
+  width: 100%;
+}
+.cid-szKH1sJXiu .mbr-description {
+  color: #bbbbbb;
+}
 .cid-soAmHxK0EN {
   padding-top: 60px;
   padding-bottom: 0px;
