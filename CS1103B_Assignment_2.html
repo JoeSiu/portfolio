@@ -1,0 +1,199 @@
+<html>
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+  <script>
+    var eyeY = 16;  //eyes height
+    var eyeStep = 1;  //eyes movement speed
+    var cheek = 255;  //cheek's transparency
+    var cheekStep = 1;  // cheeks' movement speed
+    var bodyMove = 0;  //arm movement
+    var handX;
+    var handY;
+    var ballX = 400;
+    var ballY = 0;
+    var ballSpeed = 7;  //ball's falling speed, should be same as ballMaxSpeed
+    var ballMaxSpeed = 7;  //ball's maximum falling speed, should be same as ballSpeed
+    var ballTouched = 0; //0=not touched, 1=up, 2=down
+    var randomX = 0;  //add a random force when the ball bounds
+    var score = 0;
+    var bgEllipse = 0;  //background effect
+
+    function setup() {
+      createCanvas(800, 800);
+      background(225);
+      ellipseMode(CENTER);
+      rectMode(CENTER);
+      noCursor();
+      frameRate(60);
+    }
+
+    function draw() {
+      background(0, 100, 200, 5);
+      bgMotion();
+      OnScreenText();
+      body();
+      head();
+      eyes();
+      handLegs();
+      ball();
+      endGmae();
+
+      function bgMotion() {
+        fill(200, 150)
+        stroke(5);
+        ellipse(ballX, ballY, bgEllipse, bgEllipse);
+        bgEllipse += 75;
+      }
+
+      function OnScreenText() {
+        fill(255, 0, 0);
+        textSize(75);
+        noStroke();
+        text("==================", 5, 800);
+        fill(0, 0, 0, 10);
+        textSize(55);
+        text("Catch the ball!", 225, 400)
+      }
+
+      function body() {
+        stroke(0);
+        fill(150);
+        rect(mouseX, mouseY, 20, 100);
+      }
+
+      function head() {
+        cheek += cheekStep;
+
+        if (cheek > 255 || cheek < 150) {
+          cheekStep = cheekStep * -1;
+        }
+
+        fill(255, 200, 200);
+        ellipse(mouseX, mouseY - 30, 80, 80);
+        noStroke();
+        fill(255, 50, 50, cheek);
+        ellipse(mouseX - 20, mouseY - 20, 30, 20);
+        ellipse(mouseX + 20, mouseY - 20, 30, 20);
+      }
+
+      function eyes() {
+        eyeY += eyeStep;
+
+        if (eyeY > 20 || eyeY < 3) {
+          eyeStep = eyeStep * -1;
+        }
+
+        stroke(0);
+        fill(255);
+        ellipse(mouseX - 15, mouseY - 40, 16, eyeY);
+        ellipse(mouseX + 15, mouseY - 40, 16, eyeY);
+        fill(0);
+        ellipse(mouseX - 15, mouseY - 40, 3, 3);
+        ellipse(mouseX + 15, mouseY - 40, 3, 3);
+      }
+
+      function handLegs() {
+        //legs
+        stroke(0);
+        line(mouseX - 10, mouseY + 50, mouseX - 20, mouseY + 60);
+        line(mouseX + 10, mouseY + 50, mouseX + 20, mouseY + 60);
+
+        //arms
+        line(mouseX + bodyMove, mouseY + 50, mouseX - 10, mouseY + 15);
+        line(mouseX + bodyMove, mouseY + 50, mouseX + 10, mouseY + 15);
+
+        bodyMove = mouseX - 400;
+
+        if (bodyMove < -75) { //move arm
+          bodyMove = -75;
+        } else if (bodyMove > 75) {
+          bodyMove = 75;
+        }
+
+        strokeWeight(10);  //hands
+        handX = mouseX + bodyMove;
+        handY = mouseY + 50;
+        point(handX, handY);
+        strokeWeight(1);
+      }
+
+      function ball() {
+        if ((ballX > handX - 20 && ballX < handX + 20) && (ballY > handY && ballY < handY + 25)) { //check if ball hit
+          ballTouched = 1;
+          randomX = random(-5, 5);
+          ballSpeed = ballMaxSpeed;
+          //background(255, 25);
+          bgEllipse = 0;
+          bgMotion();
+          score++;
+        } else if (ballTouched == 0) { //keep falling
+          ballY += ballSpeed;
+          ballX += randomX;
+        }
+
+        if (ballSpeed >= 0 && ballTouched == 1) { //ball goes up
+          ballY = ballY - ballSpeed;
+          ballSpeed -= 0.1;
+          ballX += randomX;
+          if (ballSpeed <= 0) {
+            ballTouched = 2;
+          }
+        }
+
+        if (ballTouched == 2) { //ball falls down
+          ballY = ballY + ballSpeed;
+          ballSpeed += 0.1;
+          ballX += randomX;
+          if (ballSpeed >= ballMaxSpeed) {
+            ballTouched = 0;
+          }
+        }
+
+        if (ballX < 25) { //left wall bound
+          randomX = random(2.5, 5);
+        }
+
+        if (ballX > 775) { //right wall bound
+          randomX = random(-2.5, -5);
+        }
+
+        fill(255,255,100); //draw ball
+        ellipse(ballX, ballY, 50, 50);
+      }
+
+      function endGmae() {
+        if (ballY >= height) {  //check if it's game over
+          fill(50, 100, 200);
+          rect(400, 400, width, 200);
+          textSize(75);
+          fill(0);
+          text("Game Over", 220, 390);
+          textSize(40);
+          text("Your score: " + score, 300, 470);
+          textSize(15);
+          text("Press anywhere to restart", 340, 750);
+
+          if (mouseIsPressed) {  //restart when mouse is pressed
+            clear();
+            ballY = 0;
+            randomX = 0;
+            score = 0;
+            bgEllipse=0;
+          }
+
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <div>
+     A mini game which player have to catch the falling ball with Zoog's hand, and it's controlled by the mouse movement. The ball will bound off and fall back randomly when it touchs the hand or walls. In addition, there are some effects added to make it more interesting.
+  </div>
+
+</body>
+
+</html>
