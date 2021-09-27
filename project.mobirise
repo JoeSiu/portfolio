@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "Portfolio",
-    "currentPage": "Japanese_Zen_style_interior.html",
+    "currentPage": "Elemental_Dance.html",
     "theme": {
       "name": "mobirise5",
       "title": "Mobirise 5",
@@ -54,7 +54,7 @@
     "siteUrl": "https://joesiu.github.io/portfolio/",
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 773,
+    "uniqCompNum": 798,
     "versionPublish": "5.2.8",
     "screenshot": "screenshot.png",
     "witsec-white-label": true,
@@ -4930,6 +4930,32 @@
           "_params": {}
         },
         {
+          "_params": {
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "socialFacebook": false,
+            "postsNumber": 5,
+            "socialDisqus": true,
+            "shortName": "https-joesiu-github-io-portfolio",
+            "bgImageRadio": false,
+            "bgImage": "@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/comments_bg.jpg",
+            "bgColorRadio": true,
+            "bgColor": "#000000",
+            "overlay": true,
+            "overlayColor": "#ffffff",
+            "overlayOpacity": 0.6
+          },
+          "innerText": "<div class=\"facebookPlaceholder text-center\" data-numposts=\"\"><h2>FACEBOOK COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/facebook-comments.jpg\"></div>",
+          "innerTextDisqus": "<div class=\"disqusPlaceholder text-center\" data-numposts=\"\"><h2>DISQUS COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@PROJECT_PATH@/assets/images/disqus-comments.jpg\"></div>",
+          "alias": "facebook-comments",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "facebook-comments-block",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "facebook-comments-block-ll"
+        },
+        {
           "alias": false,
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
@@ -5853,155 +5879,6 @@
           "_params": {}
         },
         {
-          "_name": "preloader1",
-          "_sourceTheme": "dentauram4",
-          "_styles": {
-            "#loading-center": {
-              "width": "100%",
-              "height": "100vh",
-              "position": "relative",
-              "background-color": "@preBgcolor"
-            },
-            "#loading-center-absolute": {
-              "position": "absolute",
-              "left": "50%",
-              "top": "50%",
-              "height": "50px",
-              "width": "50px",
-              "margin-top": "-25px",
-              "margin-left": "-25px",
-              "-ms-transform": "rotate(45deg)",
-              "-webkit-transform": "rotate(45deg)",
-              "transform": "rotate(45deg)",
-              "-webkit-animation": "loading-center-absolute 1.5s infinite",
-              "animation": "loading-center-absolute 1.5s infinite"
-            },
-            "#skip-loading": {
-              "text-align": "center",
-              "position": "relative",
-              "top": "85%"
-            },
-            ".object": {
-              "width": "25px",
-              "height": "25px",
-              "background-color": "@preLoadcolor",
-              "float": "left"
-            },
-            "#object_one": {
-              "-webkit-animation": "object_one 1.5s infinite",
-              "animation": "object_one 1.5s infinite"
-            },
-            "#object_two": {
-              "-webkit-animation": "object_two 1.5s infinite",
-              "animation": "object_two 1.5s infinite"
-            },
-            "#object_three": {
-              "-webkit-animation": "object_three 1.5s infinite",
-              "animation": "object_three 1.5s infinite"
-            },
-            "#object_four": {
-              "-webkit-animation": "object_four 1.5s infinite",
-              "animation": "object_four 1.5s infinite"
-            },
-            "@-webkit-keyframes loading-center-absolute": {
-              "100%": {
-                "-webkit-transform": "rotate(-45deg)"
-              }
-            },
-            "@keyframes loading-center-absolute": {
-              "100%": {
-                "transform": "rotate(-45deg)",
-                "-webkit-transform": "rotate(-45deg)"
-              }
-            },
-            "@-webkit-keyframes object_one": {
-              "25%": {
-                "-webkit-transform": "translate(0, -50px) rotate(-180deg)"
-              },
-              "100%": {
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@keyframes object_one": {
-              "25%": {
-                "transform": "translate(0, -50px) rotate(-180deg)",
-                "-webkit-transform": "translate(0, -50px) rotate(-180deg)"
-              },
-              "100%": {
-                "transform": "translate(0, 0) rotate(-180deg)",
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@-webkit-keyframes object_two": {
-              "25%": {
-                "-webkit-transform": "translate(50px, 0) rotate(-180deg)"
-              },
-              "100%": {
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@keyframes object_two": {
-              "25%": {
-                "transform": "translate(50px, 0) rotate(-180deg)",
-                "-webkit-transform": "translate(50px, 0) rotate(-180deg)"
-              },
-              "100%": {
-                "transform": "translate(0, 0) rotate(-180deg)",
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@-webkit-keyframes object_three": {
-              "25%": {
-                "-webkit-transform": "translate(-50px, 0) rotate(-180deg)"
-              },
-              "100%": {
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@keyframes object_three": {
-              "25%": {
-                "transform": "translate(-50px, 0) rotate(-180deg)",
-                "-webkit-transform": "translate(-50px, 0) rotate(-180deg)"
-              },
-              "100%": {
-                "transform": "translate(0, 0) rotate(-180deg)",
-                "-webkit-transform": "rtranslate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@-webkit-keyframes object_four": {
-              "25%": {
-                "-webkit-transform": "translate(0, 50px) rotate(-180deg)"
-              },
-              "100%": {
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "@keyframes object_four": {
-              "25%": {
-                "transform": "translate(0, 50px) rotate(-180deg)",
-                "-webkit-transform": "translate(0, 50px) rotate(-180deg)"
-              },
-              "100%": {
-                "transform": "translate(0, 0) rotate(-180deg)",
-                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
-              }
-            },
-            "P": {
-              "color": "#ff8a8a"
-            }
-          },
-          "_customHTML": "<section class=\"mbr-section\" group=\"Dentaura Preloader\" plugins=\"Dentaurapreloader\" once=\"Dentaura Preloader\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"color\" title=\"Background Color\" name=\"preBgcolor\" value=\"#000000\">\n        <input type=\"color\" title=\"Preloader Color\" name=\"preLoadcolor\" value=\"#f7ed4a\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <!-- Dentaura Preloader -->\n        <div id=\"loading-preloader\">\n            <div id=\"loading-center\">\n                <div id=\"loading-center-absolute\">\n                    <div class=\"object\" id=\"object_one\"></div>\n                    <div class=\"object\" id=\"object_two\"></div>\n                    <div class=\"object\" id=\"object_three\"></div>\n                    <div class=\"object\" id=\"object_four\"></div>\n                </div>\n                <div id=\"skip-loading\" style=\"display:none\">\n                  <p><a href=\"#\" id=\"skip-loading-link\" class=\"text-warning\">Skip loading?</a></p>\n                </div>\n            </div>\n        </div>\n\n\n    <!--End of Dentaura Preloader -->\n    \n</section>",
-          "_JSplaceholders": [],
-          "_PHPplaceholders": [],
-          "_anchor": "preloader1-8a",
-          "_isUserblock": true,
-          "_cid": "soGxjV7shr",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": "Dentaura Preloader",
-          "_params": {}
-        },
-        {
           "_name": "progress-bars1",
           "_sourceTheme": "mobirise5",
           "_styles": {
@@ -6200,6 +6077,32 @@
           "_params": {}
         },
         {
+          "_params": {
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "socialFacebook": false,
+            "postsNumber": 5,
+            "socialDisqus": true,
+            "shortName": "https-joesiu-github-io-portfolio",
+            "bgImageRadio": false,
+            "bgImage": "@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/comments_bg.jpg",
+            "bgColorRadio": true,
+            "bgColor": "#000000",
+            "overlay": true,
+            "overlayColor": "#ffffff",
+            "overlayOpacity": 0.6
+          },
+          "innerText": "<div class=\"facebookPlaceholder text-center\" data-numposts=\"\"><h2>FACEBOOK COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/facebook-comments.jpg\"></div>",
+          "innerTextDisqus": "<div class=\"disqusPlaceholder text-center\" data-numposts=\"\"><h2>DISQUS COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@PROJECT_PATH@/assets/images/disqus-comments.jpg\"></div>",
+          "alias": "facebook-comments",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "facebook-comments-block",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "facebook-comments-block-lm"
+        },
+        {
           "alias": false,
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
@@ -6220,6 +6123,155 @@
           "_protectedParams": [],
           "_global": true,
           "_once": "footers",
+          "_params": {}
+        },
+        {
+          "_name": "preloader1",
+          "_sourceTheme": "dentauram4",
+          "_styles": {
+            "#loading-center": {
+              "width": "100%",
+              "height": "100vh",
+              "position": "relative",
+              "background-color": "@preBgcolor"
+            },
+            "#loading-center-absolute": {
+              "position": "absolute",
+              "left": "50%",
+              "top": "50%",
+              "height": "50px",
+              "width": "50px",
+              "margin-top": "-25px",
+              "margin-left": "-25px",
+              "-ms-transform": "rotate(45deg)",
+              "-webkit-transform": "rotate(45deg)",
+              "transform": "rotate(45deg)",
+              "-webkit-animation": "loading-center-absolute 1.5s infinite",
+              "animation": "loading-center-absolute 1.5s infinite"
+            },
+            "#skip-loading": {
+              "text-align": "center",
+              "position": "relative",
+              "top": "85%"
+            },
+            ".object": {
+              "width": "25px",
+              "height": "25px",
+              "background-color": "@preLoadcolor",
+              "float": "left"
+            },
+            "#object_one": {
+              "-webkit-animation": "object_one 1.5s infinite",
+              "animation": "object_one 1.5s infinite"
+            },
+            "#object_two": {
+              "-webkit-animation": "object_two 1.5s infinite",
+              "animation": "object_two 1.5s infinite"
+            },
+            "#object_three": {
+              "-webkit-animation": "object_three 1.5s infinite",
+              "animation": "object_three 1.5s infinite"
+            },
+            "#object_four": {
+              "-webkit-animation": "object_four 1.5s infinite",
+              "animation": "object_four 1.5s infinite"
+            },
+            "@-webkit-keyframes loading-center-absolute": {
+              "100%": {
+                "-webkit-transform": "rotate(-45deg)"
+              }
+            },
+            "@keyframes loading-center-absolute": {
+              "100%": {
+                "transform": "rotate(-45deg)",
+                "-webkit-transform": "rotate(-45deg)"
+              }
+            },
+            "@-webkit-keyframes object_one": {
+              "25%": {
+                "-webkit-transform": "translate(0, -50px) rotate(-180deg)"
+              },
+              "100%": {
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@keyframes object_one": {
+              "25%": {
+                "transform": "translate(0, -50px) rotate(-180deg)",
+                "-webkit-transform": "translate(0, -50px) rotate(-180deg)"
+              },
+              "100%": {
+                "transform": "translate(0, 0) rotate(-180deg)",
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@-webkit-keyframes object_two": {
+              "25%": {
+                "-webkit-transform": "translate(50px, 0) rotate(-180deg)"
+              },
+              "100%": {
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@keyframes object_two": {
+              "25%": {
+                "transform": "translate(50px, 0) rotate(-180deg)",
+                "-webkit-transform": "translate(50px, 0) rotate(-180deg)"
+              },
+              "100%": {
+                "transform": "translate(0, 0) rotate(-180deg)",
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@-webkit-keyframes object_three": {
+              "25%": {
+                "-webkit-transform": "translate(-50px, 0) rotate(-180deg)"
+              },
+              "100%": {
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@keyframes object_three": {
+              "25%": {
+                "transform": "translate(-50px, 0) rotate(-180deg)",
+                "-webkit-transform": "translate(-50px, 0) rotate(-180deg)"
+              },
+              "100%": {
+                "transform": "translate(0, 0) rotate(-180deg)",
+                "-webkit-transform": "rtranslate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@-webkit-keyframes object_four": {
+              "25%": {
+                "-webkit-transform": "translate(0, 50px) rotate(-180deg)"
+              },
+              "100%": {
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "@keyframes object_four": {
+              "25%": {
+                "transform": "translate(0, 50px) rotate(-180deg)",
+                "-webkit-transform": "translate(0, 50px) rotate(-180deg)"
+              },
+              "100%": {
+                "transform": "translate(0, 0) rotate(-180deg)",
+                "-webkit-transform": "translate(0, 0) rotate(-180deg)"
+              }
+            },
+            "P": {
+              "color": "#ff8a8a"
+            }
+          },
+          "_customHTML": "<section class=\"mbr-section\" group=\"Dentaura Preloader\" plugins=\"Dentaurapreloader\" once=\"Dentaura Preloader\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"color\" title=\"Background Color\" name=\"preBgcolor\" value=\"#000000\">\n        <input type=\"color\" title=\"Preloader Color\" name=\"preLoadcolor\" value=\"#f7ed4a\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n    <!-- Dentaura Preloader -->\n        <div id=\"loading-preloader\">\n            <div id=\"loading-center\">\n                <div id=\"loading-center-absolute\">\n                    <div class=\"object\" id=\"object_one\"></div>\n                    <div class=\"object\" id=\"object_two\"></div>\n                    <div class=\"object\" id=\"object_three\"></div>\n                    <div class=\"object\" id=\"object_four\"></div>\n                </div>\n                <div id=\"skip-loading\" style=\"display:none\">\n                  <p><a href=\"#\" id=\"skip-loading-link\" class=\"text-warning\">Skip loading?</a></p>\n                </div>\n            </div>\n        </div>\n\n\n    <!--End of Dentaura Preloader -->\n    \n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_anchor": "preloader1-8a",
+          "_isUserblock": true,
+          "_cid": "soGxjV7shr",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": "Dentaura Preloader",
           "_params": {}
         }
       ]
@@ -10050,6 +10102,55 @@
           "_params": {}
         },
         {
+          "_params": {
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "socialFacebook": false,
+            "postsNumber": 5,
+            "socialDisqus": true,
+            "shortName": "https-joesiu-github-io-portfolio",
+            "bgImageRadio": false,
+            "bgImage": "@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/comments_bg.jpg",
+            "bgColorRadio": true,
+            "bgColor": "#000000",
+            "overlay": true,
+            "overlayColor": "#ffffff",
+            "overlayOpacity": 0.6
+          },
+          "innerText": "<div class=\"facebookPlaceholder text-center\" data-numposts=\"\"><h2>FACEBOOK COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/facebook-comments.jpg\"></div>",
+          "innerTextDisqus": "<div class=\"disqusPlaceholder text-center\" data-numposts=\"\"><h2>DISQUS COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@PROJECT_PATH@/assets/images/disqus-comments.jpg\"></div>",
+          "alias": "facebook-comments",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "facebook-comments-block",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "facebook-comments-block-ln"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            }
+          },
+          "_name": "footer7",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section class=\"footer7\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"><b><a href=\"#top\" class=\"text-white\">Back to top</a></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_isUserblock": true,
+          "_cid": "soAEUNPa0R",
+          "_anchor": "footer7-6h",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {}
+        },
+        {
           "_name": "preloader1",
           "_sourceTheme": "dentauram4",
           "_styles": {
@@ -10196,29 +10297,6 @@
           "_protectedParams": [],
           "_global": false,
           "_once": "Dentaura Preloader",
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            }
-          },
-          "_name": "footer7",
-          "_sourceTheme": "mobirise5",
-          "_customHTML": "<section class=\"footer7\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"><b><a href=\"#top\" class=\"text-white\">Back to top</a></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_isUserblock": true,
-          "_cid": "soAEUNPa0R",
-          "_anchor": "footer7-6h",
-          "_protectedParams": [],
-          "_global": true,
-          "_once": "footers",
           "_params": {}
         }
       ]
@@ -11236,6 +11314,32 @@
           "_params": {}
         },
         {
+          "_params": {
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "socialFacebook": false,
+            "postsNumber": 5,
+            "socialDisqus": true,
+            "shortName": "https-joesiu-github-io-portfolio",
+            "bgImageRadio": false,
+            "bgImage": "@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/comments_bg.jpg",
+            "bgColorRadio": true,
+            "bgColor": "#000000",
+            "overlay": true,
+            "overlayColor": "#ffffff",
+            "overlayOpacity": 0.6
+          },
+          "innerText": "<div class=\"facebookPlaceholder text-center\" data-numposts=\"\"><h2>FACEBOOK COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/facebook-comments.jpg\"></div>",
+          "innerTextDisqus": "<div class=\"disqusPlaceholder text-center\" data-numposts=\"\"><h2>DISQUS COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@PROJECT_PATH@/assets/images/disqus-comments.jpg\"></div>",
+          "alias": "facebook-comments",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "facebook-comments-block",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "facebook-comments-block-ly"
+        },
+        {
           "alias": false,
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
@@ -12022,6 +12126,32 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_params": {
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "socialFacebook": false,
+            "postsNumber": 5,
+            "socialDisqus": true,
+            "shortName": "https-joesiu-github-io-portfolio",
+            "bgImageRadio": false,
+            "bgImage": "@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/comments_bg.jpg",
+            "bgColorRadio": true,
+            "bgColor": "#000000",
+            "overlay": true,
+            "overlayColor": "#ffffff",
+            "overlayOpacity": 0.6
+          },
+          "innerText": "<div class=\"facebookPlaceholder text-center\" data-numposts=\"\"><h2>FACEBOOK COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/facebook-comments.jpg\"></div>",
+          "innerTextDisqus": "<div class=\"disqusPlaceholder text-center\" data-numposts=\"\"><h2>DISQUS COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@PROJECT_PATH@/assets/images/disqus-comments.jpg\"></div>",
+          "alias": "facebook-comments",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "facebook-comments-block",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "facebook-comments-block-m0"
         },
         {
           "alias": false,
@@ -13008,6 +13138,32 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_params": {
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "socialFacebook": false,
+            "postsNumber": 5,
+            "socialDisqus": true,
+            "shortName": "https-joesiu-github-io-portfolio",
+            "bgImageRadio": false,
+            "bgImage": "@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/comments_bg.jpg",
+            "bgColorRadio": true,
+            "bgColor": "#000000",
+            "overlay": true,
+            "overlayColor": "#ffffff",
+            "overlayOpacity": 0.6
+          },
+          "innerText": "<div class=\"facebookPlaceholder text-center\" data-numposts=\"\"><h2>FACEBOOK COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/facebook-comments.jpg\"></div>",
+          "innerTextDisqus": "<div class=\"disqusPlaceholder text-center\" data-numposts=\"\"><h2>DISQUS COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@PROJECT_PATH@/assets/images/disqus-comments.jpg\"></div>",
+          "alias": "facebook-comments",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "facebook-comments-block",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "facebook-comments-block-lq"
         },
         {
           "alias": false,
@@ -14144,6 +14300,32 @@
           "_params": {}
         },
         {
+          "_params": {
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "socialFacebook": false,
+            "postsNumber": 5,
+            "socialDisqus": true,
+            "shortName": "https-joesiu-github-io-portfolio",
+            "bgImageRadio": false,
+            "bgImage": "@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/comments_bg.jpg",
+            "bgColorRadio": true,
+            "bgColor": "#000000",
+            "overlay": true,
+            "overlayColor": "#ffffff",
+            "overlayOpacity": 0.6
+          },
+          "innerText": "<div class=\"facebookPlaceholder text-center\" data-numposts=\"\"><h2>FACEBOOK COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/facebook-comments.jpg\"></div>",
+          "innerTextDisqus": "<div class=\"disqusPlaceholder text-center\" data-numposts=\"\"><h2>DISQUS COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@PROJECT_PATH@/assets/images/disqus-comments.jpg\"></div>",
+          "alias": "facebook-comments",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "facebook-comments-block",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "facebook-comments-block-m1"
+        },
+        {
           "alias": false,
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
@@ -15156,6 +15338,29 @@
           "_anchor": "facebook-comments-block-lf"
         },
         {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            }
+          },
+          "_name": "footer7",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section class=\"footer7\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"><b><a href=\"#top\" class=\"text-white\">Back to top</a></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_isUserblock": true,
+          "_cid": "spWvlaJwEh",
+          "_anchor": "footer7-a7",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {}
+        },
+        {
           "_name": "preloader1",
           "_sourceTheme": "dentauram4",
           "_styles": {
@@ -15302,29 +15507,6 @@
           "_protectedParams": [],
           "_global": false,
           "_once": "Dentaura Preloader",
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            }
-          },
-          "_name": "footer7",
-          "_sourceTheme": "mobirise5",
-          "_customHTML": "<section class=\"footer7\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"><b><a href=\"#top\" class=\"text-white\">Back to top</a></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_isUserblock": true,
-          "_cid": "spWvlaJwEh",
-          "_anchor": "footer7-a7",
-          "_protectedParams": [],
-          "_global": true,
-          "_once": "footers",
           "_params": {}
         }
       ]
@@ -17147,6 +17329,32 @@
           "_params": {}
         },
         {
+          "_params": {
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "socialFacebook": false,
+            "postsNumber": 5,
+            "socialDisqus": true,
+            "shortName": "https-joesiu-github-io-portfolio",
+            "bgImageRadio": false,
+            "bgImage": "@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/comments_bg.jpg",
+            "bgColorRadio": true,
+            "bgColor": "#000000",
+            "overlay": true,
+            "overlayColor": "#ffffff",
+            "overlayOpacity": 0.6
+          },
+          "innerText": "<div class=\"facebookPlaceholder text-center\" data-numposts=\"\"><h2>FACEBOOK COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/facebook-comments.jpg\"></div>",
+          "innerTextDisqus": "<div class=\"disqusPlaceholder text-center\" data-numposts=\"\"><h2>DISQUS COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@PROJECT_PATH@/assets/images/disqus-comments.jpg\"></div>",
+          "alias": "facebook-comments",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "facebook-comments-block",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "facebook-comments-block-lo"
+        },
+        {
           "alias": false,
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
@@ -18130,6 +18338,32 @@
           "_params": {}
         },
         {
+          "_params": {
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "socialFacebook": false,
+            "postsNumber": 5,
+            "socialDisqus": true,
+            "shortName": "https-joesiu-github-io-portfolio",
+            "bgImageRadio": false,
+            "bgImage": "@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/comments_bg.jpg",
+            "bgColorRadio": true,
+            "bgColor": "#000000",
+            "overlay": true,
+            "overlayColor": "#ffffff",
+            "overlayOpacity": 0.6
+          },
+          "innerText": "<div class=\"facebookPlaceholder text-center\" data-numposts=\"\"><h2>FACEBOOK COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/facebook-comments.jpg\"></div>",
+          "innerTextDisqus": "<div class=\"disqusPlaceholder text-center\" data-numposts=\"\"><h2>DISQUS COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@PROJECT_PATH@/assets/images/disqus-comments.jpg\"></div>",
+          "alias": "facebook-comments",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "facebook-comments-block",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "facebook-comments-block-lp"
+        },
+        {
           "alias": false,
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
@@ -18916,6 +19150,32 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_params": {
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "socialFacebook": false,
+            "postsNumber": 5,
+            "socialDisqus": true,
+            "shortName": "https-joesiu-github-io-portfolio",
+            "bgImageRadio": false,
+            "bgImage": "@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/comments_bg.jpg",
+            "bgColorRadio": true,
+            "bgColor": "#000000",
+            "overlay": true,
+            "overlayColor": "#ffffff",
+            "overlayOpacity": 0.6
+          },
+          "innerText": "<div class=\"facebookPlaceholder text-center\" data-numposts=\"\"><h2>FACEBOOK COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/facebook-comments.jpg\"></div>",
+          "innerTextDisqus": "<div class=\"disqusPlaceholder text-center\" data-numposts=\"\"><h2>DISQUS COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@PROJECT_PATH@/assets/images/disqus-comments.jpg\"></div>",
+          "alias": "facebook-comments",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "facebook-comments-block",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "facebook-comments-block-lr"
         },
         {
           "alias": false,
@@ -19785,6 +20045,32 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_params": {
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "socialFacebook": false,
+            "postsNumber": 5,
+            "socialDisqus": true,
+            "shortName": "https-joesiu-github-io-portfolio",
+            "bgImageRadio": false,
+            "bgImage": "@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/comments_bg.jpg",
+            "bgColorRadio": true,
+            "bgColor": "#000000",
+            "overlay": true,
+            "overlayColor": "#ffffff",
+            "overlayOpacity": 0.6
+          },
+          "innerText": "<div class=\"facebookPlaceholder text-center\" data-numposts=\"\"><h2>FACEBOOK COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/facebook-comments.jpg\"></div>",
+          "innerTextDisqus": "<div class=\"disqusPlaceholder text-center\" data-numposts=\"\"><h2>DISQUS COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@PROJECT_PATH@/assets/images/disqus-comments.jpg\"></div>",
+          "alias": "facebook-comments",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "facebook-comments-block",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "facebook-comments-block-m3"
         },
         {
           "alias": false,
@@ -20836,6 +21122,32 @@
           "_params": {}
         },
         {
+          "_params": {
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "socialFacebook": false,
+            "postsNumber": 5,
+            "socialDisqus": true,
+            "shortName": "https-joesiu-github-io-portfolio",
+            "bgImageRadio": false,
+            "bgImage": "@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/comments_bg.jpg",
+            "bgColorRadio": true,
+            "bgColor": "#000000",
+            "overlay": true,
+            "overlayColor": "#ffffff",
+            "overlayOpacity": 0.6
+          },
+          "innerText": "<div class=\"facebookPlaceholder text-center\" data-numposts=\"\"><h2>FACEBOOK COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/facebook-comments.jpg\"></div>",
+          "innerTextDisqus": "<div class=\"disqusPlaceholder text-center\" data-numposts=\"\"><h2>DISQUS COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@PROJECT_PATH@/assets/images/disqus-comments.jpg\"></div>",
+          "alias": "facebook-comments",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "facebook-comments-block",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "facebook-comments-block-lx"
+        },
+        {
           "alias": false,
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
@@ -21822,6 +22134,55 @@
           "_params": {}
         },
         {
+          "_params": {
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "socialFacebook": false,
+            "postsNumber": 5,
+            "socialDisqus": true,
+            "shortName": "https-joesiu-github-io-portfolio",
+            "bgImageRadio": false,
+            "bgImage": "@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/comments_bg.jpg",
+            "bgColorRadio": true,
+            "bgColor": "#000000",
+            "overlay": true,
+            "overlayColor": "#ffffff",
+            "overlayOpacity": 0.6
+          },
+          "innerText": "<div class=\"facebookPlaceholder text-center\" data-numposts=\"\"><h2>FACEBOOK COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/facebook-comments.jpg\"></div>",
+          "innerTextDisqus": "<div class=\"disqusPlaceholder text-center\" data-numposts=\"\"><h2>DISQUS COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@PROJECT_PATH@/assets/images/disqus-comments.jpg\"></div>",
+          "alias": "facebook-comments",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "facebook-comments-block",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "facebook-comments-block-lh"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            }
+          },
+          "_name": "footer7",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section class=\"footer7\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"><b><a href=\"#top\" class=\"text-white\">Back to top</a></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_isUserblock": true,
+          "_cid": "swE938HwBF",
+          "_anchor": "footer7-gz",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {}
+        },
+        {
           "_name": "preloader1",
           "_sourceTheme": "dentauram4",
           "_styles": {
@@ -21968,29 +22329,6 @@
           "_protectedParams": [],
           "_global": false,
           "_once": "Dentaura Preloader",
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            }
-          },
-          "_name": "footer7",
-          "_sourceTheme": "mobirise5",
-          "_customHTML": "<section class=\"footer7\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"><b><a href=\"#top\" class=\"text-white\">Back to top</a></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_isUserblock": true,
-          "_cid": "swE938HwBF",
-          "_anchor": "footer7-gz",
-          "_protectedParams": [],
-          "_global": true,
-          "_once": "footers",
           "_params": {}
         }
       ]
@@ -22709,6 +23047,55 @@
           "_params": {}
         },
         {
+          "_params": {
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "socialFacebook": false,
+            "postsNumber": 5,
+            "socialDisqus": true,
+            "shortName": "https-joesiu-github-io-portfolio",
+            "bgImageRadio": false,
+            "bgImage": "@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/comments_bg.jpg",
+            "bgColorRadio": true,
+            "bgColor": "#000000",
+            "overlay": true,
+            "overlayColor": "#ffffff",
+            "overlayOpacity": 0.6
+          },
+          "innerText": "<div class=\"facebookPlaceholder text-center\" data-numposts=\"\"><h2>FACEBOOK COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/facebook-comments.jpg\"></div>",
+          "innerTextDisqus": "<div class=\"disqusPlaceholder text-center\" data-numposts=\"\"><h2>DISQUS COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@PROJECT_PATH@/assets/images/disqus-comments.jpg\"></div>",
+          "alias": "facebook-comments",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "facebook-comments-block",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "facebook-comments-block-lj"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            }
+          },
+          "_name": "footer7",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section class=\"footer7\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"><b><a href=\"#top\" class=\"text-white\">Back to top</a></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_isUserblock": true,
+          "_cid": "swEerIDKHe",
+          "_anchor": "footer7-h6",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {}
+        },
+        {
           "_name": "preloader1",
           "_sourceTheme": "dentauram4",
           "_styles": {
@@ -22855,29 +23242,6 @@
           "_protectedParams": [],
           "_global": false,
           "_once": "Dentaura Preloader",
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            }
-          },
-          "_name": "footer7",
-          "_sourceTheme": "mobirise5",
-          "_customHTML": "<section class=\"footer7\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"><b><a href=\"#top\" class=\"text-white\">Back to top</a></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_isUserblock": true,
-          "_cid": "swEerIDKHe",
-          "_anchor": "footer7-h6",
-          "_protectedParams": [],
-          "_global": true,
-          "_once": "footers",
           "_params": {}
         }
       ]
@@ -23462,6 +23826,55 @@
           "_params": {}
         },
         {
+          "_params": {
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "socialFacebook": false,
+            "postsNumber": 5,
+            "socialDisqus": true,
+            "shortName": "https-joesiu-github-io-portfolio",
+            "bgImageRadio": false,
+            "bgImage": "@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/comments_bg.jpg",
+            "bgColorRadio": true,
+            "bgColor": "#000000",
+            "overlay": true,
+            "overlayColor": "#ffffff",
+            "overlayOpacity": 0.6
+          },
+          "innerText": "<div class=\"facebookPlaceholder text-center\" data-numposts=\"\"><h2>FACEBOOK COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/facebook-comments.jpg\"></div>",
+          "innerTextDisqus": "<div class=\"disqusPlaceholder text-center\" data-numposts=\"\"><h2>DISQUS COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@PROJECT_PATH@/assets/images/disqus-comments.jpg\"></div>",
+          "alias": "facebook-comments",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "facebook-comments-block",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "facebook-comments-block-lk"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            }
+          },
+          "_name": "footer7",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section class=\"footer7\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"><b><a href=\"#top\" class=\"text-white\">Back to top</a></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_isUserblock": true,
+          "_cid": "swEjju83xk",
+          "_anchor": "footer7-hd",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {}
+        },
+        {
           "_name": "preloader1",
           "_sourceTheme": "dentauram4",
           "_styles": {
@@ -23608,29 +24021,6 @@
           "_protectedParams": [],
           "_global": false,
           "_once": "Dentaura Preloader",
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            }
-          },
-          "_name": "footer7",
-          "_sourceTheme": "mobirise5",
-          "_customHTML": "<section class=\"footer7\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"><b><a href=\"#top\" class=\"text-white\">Back to top</a></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_isUserblock": true,
-          "_cid": "swEjju83xk",
-          "_anchor": "footer7-hd",
-          "_protectedParams": [],
-          "_global": true,
-          "_once": "footers",
           "_params": {}
         }
       ]
@@ -24649,6 +25039,55 @@
           "_params": {}
         },
         {
+          "_params": {
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "socialFacebook": false,
+            "postsNumber": 5,
+            "socialDisqus": true,
+            "shortName": "https-joesiu-github-io-portfolio",
+            "bgImageRadio": false,
+            "bgImage": "@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/comments_bg.jpg",
+            "bgColorRadio": true,
+            "bgColor": "#000000",
+            "overlay": true,
+            "overlayColor": "#ffffff",
+            "overlayOpacity": 0.6
+          },
+          "innerText": "<div class=\"facebookPlaceholder text-center\" data-numposts=\"\"><h2>FACEBOOK COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/facebook-comments.jpg\"></div>",
+          "innerTextDisqus": "<div class=\"disqusPlaceholder text-center\" data-numposts=\"\"><h2>DISQUS COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@PROJECT_PATH@/assets/images/disqus-comments.jpg\"></div>",
+          "alias": "facebook-comments",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "facebook-comments-block",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "facebook-comments-block-li"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            }
+          },
+          "_name": "footer7",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section class=\"footer7\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"><b><a href=\"#top\" class=\"text-white\">Back to top</a></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_isUserblock": true,
+          "_cid": "swGtMpQSJE",
+          "_anchor": "footer7-hk",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {}
+        },
+        {
           "_name": "preloader1",
           "_sourceTheme": "dentauram4",
           "_styles": {
@@ -24795,29 +25234,6 @@
           "_protectedParams": [],
           "_global": false,
           "_once": "Dentaura Preloader",
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            }
-          },
-          "_name": "footer7",
-          "_sourceTheme": "mobirise5",
-          "_customHTML": "<section class=\"footer7\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background5.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"col-12\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\" data-app-placeholder=\"Type Text\"><b><a href=\"#top\" class=\"text-white\">Back to top</a></b></p>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_isUserblock": true,
-          "_cid": "swGtMpQSJE",
-          "_anchor": "footer7-hk",
-          "_protectedParams": [],
-          "_global": true,
-          "_once": "footers",
           "_params": {}
         }
       ]
@@ -25597,6 +26013,32 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_params": {
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "socialFacebook": false,
+            "postsNumber": 5,
+            "socialDisqus": true,
+            "shortName": "https-joesiu-github-io-portfolio",
+            "bgImageRadio": false,
+            "bgImage": "@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/comments_bg.jpg",
+            "bgColorRadio": true,
+            "bgColor": "#000000",
+            "overlay": true,
+            "overlayColor": "#ffffff",
+            "overlayOpacity": 0.6
+          },
+          "innerText": "<div class=\"facebookPlaceholder text-center\" data-numposts=\"\"><h2>FACEBOOK COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/facebook-comments.jpg\"></div>",
+          "innerTextDisqus": "<div class=\"disqusPlaceholder text-center\" data-numposts=\"\"><h2>DISQUS COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@PROJECT_PATH@/assets/images/disqus-comments.jpg\"></div>",
+          "alias": "facebook-comments",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "facebook-comments-block",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "facebook-comments-block-lv"
         },
         {
           "alias": false,
@@ -26547,6 +26989,32 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_params": {
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "socialFacebook": false,
+            "postsNumber": 5,
+            "socialDisqus": true,
+            "shortName": "https-joesiu-github-io-portfolio",
+            "bgImageRadio": false,
+            "bgImage": "@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/comments_bg.jpg",
+            "bgColorRadio": true,
+            "bgColor": "#000000",
+            "overlay": true,
+            "overlayColor": "#ffffff",
+            "overlayOpacity": 0.6
+          },
+          "innerText": "<div class=\"facebookPlaceholder text-center\" data-numposts=\"\"><h2>FACEBOOK COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/facebook-comments.jpg\"></div>",
+          "innerTextDisqus": "<div class=\"disqusPlaceholder text-center\" data-numposts=\"\"><h2>DISQUS COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@PROJECT_PATH@/assets/images/disqus-comments.jpg\"></div>",
+          "alias": "facebook-comments",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "facebook-comments-block",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "facebook-comments-block-lw"
         },
         {
           "alias": false,
@@ -27775,6 +28243,32 @@
           "_params": {}
         },
         {
+          "_params": {
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "socialFacebook": false,
+            "postsNumber": 5,
+            "socialDisqus": true,
+            "shortName": "https-joesiu-github-io-portfolio",
+            "bgImageRadio": false,
+            "bgImage": "@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/comments_bg.jpg",
+            "bgColorRadio": true,
+            "bgColor": "#000000",
+            "overlay": true,
+            "overlayColor": "#ffffff",
+            "overlayOpacity": 0.6
+          },
+          "innerText": "<div class=\"facebookPlaceholder text-center\" data-numposts=\"\"><h2>FACEBOOK COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/facebook-comments.jpg\"></div>",
+          "innerTextDisqus": "<div class=\"disqusPlaceholder text-center\" data-numposts=\"\"><h2>DISQUS COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@PROJECT_PATH@/assets/images/disqus-comments.jpg\"></div>",
+          "alias": "facebook-comments",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "facebook-comments-block",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "facebook-comments-block-m4"
+        },
+        {
           "alias": false,
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
@@ -28588,6 +29082,32 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_params": {
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "socialFacebook": false,
+            "postsNumber": 5,
+            "socialDisqus": true,
+            "shortName": "https-joesiu-github-io-portfolio",
+            "bgImageRadio": false,
+            "bgImage": "@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/comments_bg.jpg",
+            "bgColorRadio": true,
+            "bgColor": "#000000",
+            "overlay": true,
+            "overlayColor": "#ffffff",
+            "overlayOpacity": 0.6
+          },
+          "innerText": "<div class=\"facebookPlaceholder text-center\" data-numposts=\"\"><h2>FACEBOOK COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/facebook-comments.jpg\"></div>",
+          "innerTextDisqus": "<div class=\"disqusPlaceholder text-center\" data-numposts=\"\"><h2>DISQUS COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@PROJECT_PATH@/assets/images/disqus-comments.jpg\"></div>",
+          "alias": "facebook-comments",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "facebook-comments-block",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "facebook-comments-block-m2"
         },
         {
           "alias": false,
@@ -29475,6 +29995,32 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_params": {
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "socialFacebook": false,
+            "postsNumber": 5,
+            "socialDisqus": true,
+            "shortName": "https-joesiu-github-io-portfolio",
+            "bgImageRadio": false,
+            "bgImage": "@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/comments_bg.jpg",
+            "bgColorRadio": true,
+            "bgColor": "#000000",
+            "overlay": true,
+            "overlayColor": "#ffffff",
+            "overlayOpacity": 0.6
+          },
+          "innerText": "<div class=\"facebookPlaceholder text-center\" data-numposts=\"\"><h2>FACEBOOK COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/facebook-comments.jpg\"></div>",
+          "innerTextDisqus": "<div class=\"disqusPlaceholder text-center\" data-numposts=\"\"><h2>DISQUS COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@PROJECT_PATH@/assets/images/disqus-comments.jpg\"></div>",
+          "alias": "facebook-comments",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "facebook-comments-block",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "facebook-comments-block-lu"
         },
         {
           "alias": false,
@@ -30400,6 +30946,32 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_params": {
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "socialFacebook": false,
+            "postsNumber": 5,
+            "socialDisqus": true,
+            "shortName": "https-joesiu-github-io-portfolio",
+            "bgImageRadio": false,
+            "bgImage": "@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/comments_bg.jpg",
+            "bgColorRadio": true,
+            "bgColor": "#000000",
+            "overlay": true,
+            "overlayColor": "#ffffff",
+            "overlayOpacity": 0.6
+          },
+          "innerText": "<div class=\"facebookPlaceholder text-center\" data-numposts=\"\"><h2>FACEBOOK COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/facebook-comments.jpg\"></div>",
+          "innerTextDisqus": "<div class=\"disqusPlaceholder text-center\" data-numposts=\"\"><h2>DISQUS COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@PROJECT_PATH@/assets/images/disqus-comments.jpg\"></div>",
+          "alias": "facebook-comments",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "facebook-comments-block",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "facebook-comments-block-lt"
         },
         {
           "alias": false,
@@ -31351,6 +31923,32 @@
           "_params": {}
         },
         {
+          "_params": {
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "socialFacebook": false,
+            "postsNumber": 5,
+            "socialDisqus": true,
+            "shortName": "https-joesiu-github-io-portfolio",
+            "bgImageRadio": false,
+            "bgImage": "@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/comments_bg.jpg",
+            "bgColorRadio": true,
+            "bgColor": "#000000",
+            "overlay": true,
+            "overlayColor": "#ffffff",
+            "overlayOpacity": 0.6
+          },
+          "innerText": "<div class=\"facebookPlaceholder text-center\" data-numposts=\"\"><h2>FACEBOOK COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/facebook-comments.jpg\"></div>",
+          "innerTextDisqus": "<div class=\"disqusPlaceholder text-center\" data-numposts=\"\"><h2>DISQUS COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@PROJECT_PATH@/assets/images/disqus-comments.jpg\"></div>",
+          "alias": "facebook-comments",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "facebook-comments-block",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "facebook-comments-block-lz"
+        },
+        {
           "alias": false,
           "_styles": {
             "padding-top": "(@paddingTop * 15px)",
@@ -32137,6 +32735,32 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_params": {
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "socialFacebook": false,
+            "postsNumber": 5,
+            "socialDisqus": true,
+            "shortName": "https-joesiu-github-io-portfolio",
+            "bgImageRadio": false,
+            "bgImage": "@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/comments_bg.jpg",
+            "bgColorRadio": true,
+            "bgColor": "#000000",
+            "overlay": true,
+            "overlayColor": "#ffffff",
+            "overlayOpacity": 0.6
+          },
+          "innerText": "<div class=\"facebookPlaceholder text-center\" data-numposts=\"\"><h2>FACEBOOK COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/facebook-comments.jpg\"></div>",
+          "innerTextDisqus": "<div class=\"disqusPlaceholder text-center\" data-numposts=\"\"><h2>DISQUS COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@PROJECT_PATH@/assets/images/disqus-comments.jpg\"></div>",
+          "alias": "facebook-comments",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "facebook-comments-block",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "facebook-comments-block-ls"
         },
         {
           "alias": false,
@@ -33304,6 +33928,32 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_params": {
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "socialFacebook": false,
+            "postsNumber": 5,
+            "socialDisqus": true,
+            "shortName": "https-joesiu-github-io-portfolio",
+            "bgImageRadio": false,
+            "bgImage": "@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/comments_bg.jpg",
+            "bgColorRadio": true,
+            "bgColor": "#000000",
+            "overlay": true,
+            "overlayColor": "#ffffff",
+            "overlayOpacity": 0.6
+          },
+          "innerText": "<div class=\"facebookPlaceholder text-center\" data-numposts=\"\"><h2>FACEBOOK COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@ADDONS_PATH@/facebook-comments/facebook-comments-block/assets/facebook-comments.jpg\"></div>",
+          "innerTextDisqus": "<div class=\"disqusPlaceholder text-center\" data-numposts=\"\"><h2>DISQUS COMMENTS WILL BE SHOWN ONLY WHEN YOUR SITE IS ONLINE</h2> <img src=\"@PROJECT_PATH@/assets/images/disqus-comments.jpg\"></div>",
+          "alias": "facebook-comments",
+          "_tags": [
+            "Extension"
+          ],
+          "_name": "facebook-comments-block",
+          "_sourceTheme": "mobirise5",
+          "_anchor": "facebook-comments-block-m5"
         },
         {
           "alias": false,
