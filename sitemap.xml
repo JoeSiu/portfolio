@@ -24,12 +24,6 @@
 		<loc>https://joesiu.github.io/portfolio/final_class.html</loc>
 	</url>
 	<url>
-		<loc>https://joesiu.github.io/portfolio/3d_artworks.html</loc>
-	</url>
-	<url>
-		<loc>https://joesiu.github.io/portfolio/programming_works.html</loc>
-	</url>
-	<url>
 		<loc>https://joesiu.github.io/portfolio/commissions.html</loc>
 	</url>
 	<url>
@@ -106,5 +100,11 @@
 	</url>
 	<url>
 		<loc>https://joesiu.github.io/portfolio/python_opengl.html</loc>
+	</url>
+	<url>
+		<loc>https://joesiu.github.io/portfolio/programming.html</loc>
+	</url>
+	<url>
+		<loc>https://joesiu.github.io/portfolio/artwork.html</loc>
 	</url>
 </urlset>
